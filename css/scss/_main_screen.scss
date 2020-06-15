@@ -1,0 +1,83 @@
+/* start main screen styles */ 
+
+#main_screen {
+    overflow: visible;
+    background: #fff url(images/bg_main_screen.jpg) no-repeat center / cover;
+    height: 887px;
+    @include transition(all);
+    
+    .in {
+		height: 100%;
+		padding-top: 330px;
+    }
+    
+    
+    .image {
+		position: absolute;
+		width: 614/1546*100%;
+		top: 312/941*100%;
+		left: 23px;
+		@include transition(all);
+		
+		img {
+			max-width: 100%;
+		}
+    }
+    .text {
+		width: 45%;
+		position: relative;
+		padding-bottom: 1px;
+		z-index: 2;
+		@include transition(all);
+    }
+    h2 {
+		letter-spacing: 0.04em;
+		font-size: 40px;
+		line-height: 45px;
+		//color: #fff;           
+		max-width: 1000px;
+		margin-bottom: 10px;
+		font-weight: 900;
+		text-transform: uppercase;
+		//@include transition_slow(all);
+    }
+    
+    .button {
+	min-width: 173px;
+	margin-bottom: 72px;
+    }
+    
+    p {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 40px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 1600px) {
+    
+}
+@media screen and (max-width: 1400px) {
+    
+}
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 800px) {
+   
+}
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+}
+
+/* end main screen styles */

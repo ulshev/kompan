@@ -1,0 +1,145 @@
+/* start directions styles */ 
+
+#directions {
+    overflow: visible;
+    margin-top: -65px;
+    padding-bottom: 27px;
+    z-index: 2;
+}
+
+.directions {
+    position: relative;
+    margin-bottom: 50px;
+
+    .slick-list {
+        padding: 15px 0;
+        margin: 0 -15px;
+    }
+
+    .slick-arrow{
+        opacity: 1;
+        border: 0;
+        
+        &:before {
+            border-color: #AEAEAE;
+        }
+        &:hover{
+            background: none;
+            &:before {
+                border-color: #333333;
+            }
+        }
+    }
+
+    .item {
+        position: relative;
+        top: 0;
+        margin: 0 15px;
+        border-radius: 5px;
+        height: 130px;
+        line-height: 130px;
+        background-color: green;
+        @include transition(top);
+
+        &:hover {
+            top: -10px;
+        }
+
+        &.color1 {
+            background: -webkit-linear-gradient(-12.06deg, #1492C8 0%, #77F7FF 100%); /* для webkit-браузеров */
+	        background: -moz-linear-gradient(-12.06deg, #1492C8 0%, #77F7FF 100%); /* для firefox 3.6+ */
+	        background: -o-linear-gradient(-12.06deg, #1492C8 0%, #77F7FF 100%); /* для Opera 11.10+ */
+            background: -ms-linear-gradient(-12.06deg, #1492C8 0%, #77F7FF 100%); /* для IE10+ */
+	        background: linear-gradient(102.06deg, #1492C8 0%, #77F7FF 100%);
+        }
+
+        &.color2 {
+            background: -webkit-linear-gradient(-12.06deg, #04AF00 0%, #E4FF3F 100%); /* для webkit-браузеров */
+	        background: -moz-linear-gradient(-12.06deg, #04AF00 0%, #E4FF3F 100%); /* для firefox 3.6+ */
+	        background: -o-linear-gradient(-12.06deg, #04AF00 0%, #E4FF3F 100%); /* для Opera 11.10+ */
+            background: -ms-linear-gradient(-12.06deg, #04AF00 0%, #E4FF3F 100%); /* для IE10+ */
+	        background: linear-gradient(102.06deg, #04AF00 0%, #E4FF3F 100%);
+        }
+
+        &.color3 {
+            background: -webkit-linear-gradient(-12.06deg, #008D74 0%, #5BEDA7 100%); /* для webkit-браузеров */
+	        background: -moz-linear-gradient(-12.06deg, #008D74 0%, #5BEDA7 100%); /* для firefox 3.6+ */
+	        background: -o-linear-gradient(-12.06deg, #008D74 0%, #5BEDA7 100%); /* для Opera 11.10+ */
+            background: -ms-linear-gradient(-12.06deg, #008D74 0%, #5BEDA7 100%); /* для IE10+ */
+	        background: linear-gradient(101.82deg, #008D74 -1.94%, #5BEDA7 100%);
+        }
+
+        &.color4 {
+            background: -webkit-linear-gradient(-12.06deg, #CEA822 0%, #FCFF70 100%); /* для webkit-браузеров */
+	        background: -moz-linear-gradient(-12.06deg, #CEA822 0%, #FCFF70 100%); /* для firefox 3.6+ */
+	        background: -o-linear-gradient(-12.06deg, #CEA822 0%, #FCFF70 100%); /* для Opera 11.10+ */
+            background: -ms-linear-gradient(-12.06deg, #CEA822 0%, #FCFF70 100%); /* для IE10+ */
+	        background: linear-gradient(102.06deg, #CEA822 0%, #FCFF70 100%);
+        }
+
+        &.color5 {
+            background: -webkit-linear-gradient(-12.06deg, #01D4AD 0%, #B8FF1E 100%); /* для webkit-браузеров */
+	        background: -moz-linear-gradient(-12.06deg, #01D4AD 0%, #B8FF1E 100%); /* для firefox 3.6+ */
+	        background: -o-linear-gradient(-12.06deg, #01D4AD 0%, #B8FF1E 100%); /* для Opera 11.10+ */
+            background: -ms-linear-gradient(-12.06deg, #01D4AD 0%, #B8FF1E 100%); /* для IE10+ */
+	        background: linear-gradient(102.06deg, #01D4AD 0%, #B8FF1E 100%);
+        }
+
+        &.color6 {
+            background: -webkit-linear-gradient(-12.06deg, #0A9EBE 0%, #63FDC6 100%); /* для webkit-браузеров */
+	        background: -moz-linear-gradient(-12.06deg, #0A9EBE 0%, #63FDC6 100%); /* для firefox 3.6+ */
+	        background: -o-linear-gradient(-12.06deg, #0A9EBE 0%, #63FDC6 100%); /* для Opera 11.10+ */
+            background: -ms-linear-gradient(-12.06deg, #0A9EBE 0%, #63FDC6 100%); /* для IE10+ */
+	        background: linear-gradient(102.06deg, #0A9EBE 0%, #63FDC6 100%);
+        }
+
+        a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            word-wrap: none;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            word-wrap: break-word;
+            margin: 0 10px;
+            text-align: left;
+        }
+
+        .h5 {
+            line-height: 28px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1600px) {
+    
+}
+@media screen and (max-width: 1400px) {
+    
+}
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 800px) {
+   
+}
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+}
+
+/* end directions styles */

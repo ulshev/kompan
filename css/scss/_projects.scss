@@ -1,0 +1,219 @@
+/* start projects styles */ 
+
+#projects {
+    overflow: visible;
+    z-index: 2;
+    padding-bottom: 95px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+.projects {
+    position: relative;
+    margin-bottom: 60px;
+
+    // .slick-list {
+    //     padding: 15px 0;
+    //     margin: 0 -15px;
+    // }
+
+    .slick-arrow {
+        border-color: rgba(198, 198, 198, 0.7);
+        opacity: 1;
+
+        &::before {
+            border-color: #C6C6C6;
+        }
+
+        &:hover {
+            background: rgba(198, 198, 198, 0.7);
+            &::before {
+                border-color: #fff;
+            }
+        }
+    }
+
+    .project_item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        top: 0;
+        //margin: 0 11px 30px 15px;
+        border-radius: 5px;
+        background-color: green;
+        //@include transition(top);
+        width: calc(25% - 31px);
+        height: 360px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        &:nth-child(1) {
+            float: left;
+            width: calc(46.4% - 30px);
+            height: 350px;
+            margin: 0 30px 30px 0;
+            &:hover a {
+                line-height: 350px;
+            }
+        }
+
+        &:nth-child(2) {
+            //float: left;
+            //clear: left;
+            width: 23.5%;
+            height: 600px;
+            margin-bottom: -285px;
+            
+            &:hover a {
+                line-height: 600px;
+            }
+        }
+
+        &:nth-child(3) {
+            float: right;
+            //clear: left;
+            width: calc(30.1% - 30px);
+            height: 285px;
+            margin: 0 0 30px 30px;
+            
+            &:hover a {
+                line-height: 285px;
+            }
+        }
+        &:nth-child(4) {
+            float: right;
+            //clear: left;
+            width: calc(30.1% - 30px);
+            height: 285px;
+            margin: 0 0 0px 30px;
+            &:hover a {
+                line-height: 285px;
+            }
+        }
+
+        &:nth-child(5) {
+            float: left;
+            clear: left;
+            width: calc(23.2% - 30px);
+            height: 220px;
+            margin: 0 30px 0px 0;
+            &:hover a {
+                line-height: 220px;
+            }
+        }
+        &:nth-child(6) {
+            float: left;
+            //clear: left;
+            width: calc(23.2% - 30px);
+            height: 220px;
+            margin: 0 30px 0px 0;
+            &:hover a {
+                line-height: 220px;
+            }
+        }
+
+        .bg {
+            height: 100%;
+            background-color: red;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        p {
+            vertical-align: middle;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 10px 20px 0;
+            pointer-events: none;
+            opacity: 0;
+            @include transition(all);
+        }
+
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            line-height: 660px;
+            top: 0;
+            left: 0;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgba(0, 79, 50, 0.7);
+            opacity: 0;
+            @include transition(all);
+
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 20px;
+                line-height: 27px;
+                border-bottom: 2px solid white;
+            }
+
+            &::after {
+                content: '';
+                width: 7px;
+                height: 7px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 2px;
+                margin-left: 10px;
+                border-top: 2px solid white;
+                border-right: 2px solid white;
+                transform: rotate(45deg);
+            }
+            
+        }
+
+            &:hover{ 
+                a {
+                    opacity: 1;
+                    line-height: 355px;
+                }
+                p {
+                    opacity: 1;
+                }
+            }
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1600px) {
+    
+}
+@media screen and (max-width: 1400px) {
+    
+}
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 800px) {
+   
+}
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+}
+
+/* end projects styles */

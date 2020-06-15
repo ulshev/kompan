@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/manroperegular.eot');
+    src: 
+         url('../fonts/manroperegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/manroperegular.woff2') format('woff2'),
+         url('../fonts/manroperegular.woff') format('woff'),
+         url('../fonts/manroperegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/manropemedium.eot');
+    src: 
+         url('../fonts/manropemedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/manropemedium.woff2') format('woff2'),
+         url('../fonts/manropemedium.woff') format('woff'),
+         url('../fonts/manropemedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/manropebold.eot');
+    src: 
+         url('../fonts/manropebold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/manropebold.woff2') format('woff2'),
+         url('../fonts/manropebold.woff') format('woff'),
+         url('../fonts/manropebold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Houschka Rounded';
+    src: url('../fonts/houschka_rounded_bold.eot');
+    src: 
+         url('../fonts/houschka_rounded_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/houschka_rounded_bold.woff2') format('woff2'),
+         url('../fonts/houschka_rounded_bold.woff') format('woff'),
+         url('../fonts/houschka_rounded_bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Houschka Rounded';
+    src: url('../fonts/houschka_rounded_extra_bold.eot');
+    src: 
+         url('../fonts/houschka_rounded_extra_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/houschka_rounded_extra_bold.woff2') format('woff2'),
+         url('../fonts/houschka_rounded_extra_bold.woff') format('woff'),
+         url('../fonts/houschka_rounded_extra_bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
