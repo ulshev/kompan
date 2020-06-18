@@ -157,7 +157,7 @@ $(document).ready(function() {
 		]
 	});
 
-	$('.advantages').slick({
+	$('#advantages .advantages').slick({
 	    slidesToShow: 3,
 	    slidesToScroll: 1,
 	    infinite: true,
@@ -182,7 +182,7 @@ $(document).ready(function() {
 		]
 	});
 
-	$('.projects').slick({
+	$('#projects .projects').slick({
 	    slidesToShow: 1,
 	    slidesToScroll: 1,
 	    infinite: true,
@@ -192,153 +192,32 @@ $(document).ready(function() {
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
-	 
-	$('.promotions_more').slick({
-	    slidesToShow: 4,
+
+	$('.projects.slider').slick({
+	    slidesToShow: 3,
 	    slidesToScroll: 1,
 	    infinite: true,
-	    arrows: false,
 	    dots: false,
 	    focusOnSelect: true,
-	    asNavFor: '.promotions_images',
-	    vertical: true,
-	    swipe: false,
-	    responsive: [
-		{
-		    breakpoint: 801,
-		    settings: {
-		      slidesToShow: 1,
-		      vertical: false,
-		      swipe: true,
-		    }
-		},
-	    ]
-	});
-	$('.promotions_images').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    infinite: true,
-	    arrows: false,
-	    dots: false,
-	    fade: true,
-	    asNavFor: '.promotions_more',
-	    swipe: false,
-	    
-	    responsive: [
-		{
-		    breakpoint: 801,
-		    settings: {
-		      swipe: true,
-		      arrows: true,
-		      fade: false,
-		      prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		      nextArrow: '<span class="slick-next">&nbsp;</span>',
-		    }
-		},
-	    ]
-	    
-	});
-	
-	$('.promotions_block.slider').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
 	    arrows: true,
-	    dots: false,
-	    //fade: true,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	});
-	
-	
-	$('.advantages_menu').slick({
-	    slidesToShow: 12,
-	    slidesToScroll: 12,
-	    infinite: true,
-	    arrows: false,
-	    dots: false,
-	    focusOnSelect: true,
-	    asNavFor: '.advantages_more',
-	    //vertical: true,
-	    swipe: false,
-	    responsive: [
-		{
-		    breakpoint: 601,
-		    settings: {
-		      slidesToShow: 1,
-		      slidesToScroll: 1,
-		      //vertical: false,
-		      swipe: true,
-		    }
-		},
-	    ]
-	});
-	$('.advantages_more').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    infinite: true,
-	    arrows: false,
-	    dots: true,
-	    fade: true,
-	    asNavFor: '.advantages_menu',
-	    swipe: false,
-	    
-	    responsive: [
-		{
-		    breakpoint: 601,
-		    settings: {
-		      swipe: true,
-		      arrows: true,
-		      fade: false,
-		      dots: false,
-		      prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		      nextArrow: '<span class="slick-next">&nbsp;</span>',
-		    }
-		},
-	    ]
-	    
-	});
-	
-	
-	$('.clients_slider').slick({
-	    slidesToShow: 5,
-	    slidesToScroll: 1,
-	    arrows: true,
-	    dots: false,
-	    centerMode: false,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    responsive: [
-		  {
-		    breakpoint: 1501,
-		    settings: {
-		      vertical: false,
-		      slidesToShow: 4,
-		    }
-		  },
-		  {
-		    breakpoint: 1201,
-		    settings: {
-		      slidesToShow: 3,
-		      vertical: false,
-		    }
-		  },
-		  {
-		    breakpoint: 901,
-		    settings: {
-		      slidesToShow: 2,
-		      vertical: false,
-		    }
-		  },
-		  
-		  {
-		    breakpoint: 451,
-		    settings: {
-		      slidesToShow: 2,
-		      vertical: false,
-		    }
-		  },
+		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
+		responsive: [
+			{
+				breakpoint: 1101,
+				settings: {
+				  slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 601,
+				settings: {
+				  slidesToShow: 1,
+				}
+			},
 		]
 	});
+
 	
 	
 	$('.sertificates_block .slider').slick({
@@ -351,36 +230,14 @@ $(document).ready(function() {
 	    nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
 	
-	
-	$('.reviews_more').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    infinite: true,
-	    arrows: false,
-	    dots: false,
-	    focusOnSelect: true,
-	    asNavFor: '.reviews_image',
-	    fade: true,
-	});
-	$('.reviews_image').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    infinite: true,
-	    arrows: true,
-	    dots: false,
-	    fade: true,
-	    asNavFor: '.reviews_more',
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    
-	});
+
 	
 	$('.galery').slick({
-	    slidesToShow: 1,
+	    slidesToShow: 3,
 	    slidesToScroll: 1,
 	    arrows: true,
 	    dots: false,
-	    fade: true,
+	    //fade: true,
 	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
 	    nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
@@ -502,6 +359,7 @@ $(document).ready(function() {
 	// 		);
 	// 	}
 	// );
+	
 
-   
+	$('select').select2();
 });

@@ -29,7 +29,7 @@
         top: 0;
         margin: 0 11px 30px 15px;
         border-radius: 5px;
-        background-color: green;
+        background-color: rgba(0, 79, 50, 0.7);
         //@include transition(top);
         width: calc(25% - 31px);
         border-radius: 5px;
@@ -60,7 +60,7 @@
                 display: inline-block;
                 vertical-align: middle;
                 line-height: 22px;
-                max-width: 240px;
+                max-width: 260px;
             }
         }
 
@@ -109,6 +109,47 @@
         }
     }
 
+    &.categories {
+        padding-top: 50px;
+        padding-bottom: 62px;
+
+        .item {
+            width: calc(33.33% - 31px);
+
+            .h6 {
+                font-size: 25px;
+
+                b {
+                    max-width: 340px;
+                }
+            }
+        }
+    }
+
+}
+
+#about_page {
+    .production {
+        .item {
+            height: 271px;
+
+            .h6 {
+                font-size: 20px;
+            }
+
+            a {
+                line-height: 360px;
+    
+    
+                &:hover {
+                    opacity: 1;
+                    line-height: 271px;
+                }
+                
+            }
+        }
+    }    
+    
 }
 
 

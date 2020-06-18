@@ -18,7 +18,7 @@
 .news_block {
     position: relative;
     margin: 0 -15px 47px;
-    height: 496px;
+    //height: 496px;
 
     .news_item {
         display: inline-block;
@@ -121,6 +121,8 @@
 
         &:hover {
             height: 496px;
+            margin-bottom: -11px;
+            z-index: 2;
 
             &::before {
                 opacity: 0;
@@ -137,7 +139,11 @@
 }
 
 
-
+#news_page {
+    .news_block {
+        margin-bottom: 26px;
+    }    
+}
 
 
 

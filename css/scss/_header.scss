@@ -164,6 +164,7 @@
 		height: 21px;
 		background: left top no-repeat;
 		margin-left: 42px;
+		padding-bottom: 2px;
         
         &:hover {
 			text-decoration: underline;
@@ -174,7 +175,8 @@
         background-image: url(images/icon_tel_red.png)
 	}
 	.mail {
-		background-image: url(images/icon_mail_red.png);
+		background-image: url(images/icon_mail_red1.png);
+		background-position: left 2px;
 		padding-left: 37px;
 		margin-left: 50px;
     }

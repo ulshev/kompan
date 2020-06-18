@@ -3,18 +3,28 @@
 #projects {
     overflow: visible;
     z-index: 2;
-    padding-bottom: 95px;
+    padding-bottom: 58px;
 
     h2 {
         margin-bottom: 20px;
     }
-
-
 }
+
+#index {
+    #projects {
+        padding-bottom: 95px;
+    }
+    .projects {
+        position: relative;
+        margin-bottom: 60px;
+        clear: both;
+    }
+} 
 
 .projects {
     position: relative;
-    margin-bottom: 60px;
+    margin: 0 -15px 28px;
+    clear: both;
 
     // .slick-list {
     //     padding: 15px 0;
@@ -42,83 +52,20 @@
         display: inline-block;
         vertical-align: top;
         top: 0;
-        //margin: 0 11px 30px 15px;
+        margin: 0 11px 30px 15px;
         border-radius: 5px;
-        background-color: green;
+        background-color: rgba(0, 79, 50, 0.7);
         //@include transition(top);
-        width: calc(25% - 31px);
-        height: 360px;
+        width: calc(33.3% - 29px);
+        height: 390px;
         border-radius: 5px;
         overflow: hidden;
 
-        &:nth-child(1) {
-            float: left;
-            width: calc(46.4% - 30px);
-            height: 350px;
-            margin: 0 30px 30px 0;
-            &:hover a {
-                line-height: 350px;
-            }
-        }
-
-        &:nth-child(2) {
-            //float: left;
-            //clear: left;
-            width: 23.5%;
-            height: 600px;
-            margin-bottom: -285px;
-            
-            &:hover a {
-                line-height: 600px;
-            }
-        }
-
-        &:nth-child(3) {
-            float: right;
-            //clear: left;
-            width: calc(30.1% - 30px);
-            height: 285px;
-            margin: 0 0 30px 30px;
-            
-            &:hover a {
-                line-height: 285px;
-            }
-        }
-        &:nth-child(4) {
-            float: right;
-            //clear: left;
-            width: calc(30.1% - 30px);
-            height: 285px;
-            margin: 0 0 0px 30px;
-            &:hover a {
-                line-height: 285px;
-            }
-        }
-
-        &:nth-child(5) {
-            float: left;
-            clear: left;
-            width: calc(23.2% - 30px);
-            height: 220px;
-            margin: 0 30px 0px 0;
-            &:hover a {
-                line-height: 220px;
-            }
-        }
-        &:nth-child(6) {
-            float: left;
-            //clear: left;
-            width: calc(23.2% - 30px);
-            height: 220px;
-            margin: 0 30px 0px 0;
-            &:hover a {
-                line-height: 220px;
-            }
-        }
+       
 
         .bg {
             height: 100%;
-            background-color: red;
+            //background-color: red;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -137,6 +84,8 @@
             padding: 10px 20px 0;
             pointer-events: none;
             opacity: 0;
+            max-height: 95px;
+            overflow: hidden;
             @include transition(all);
         }
 
@@ -178,17 +127,109 @@
             
         }
 
-            &:hover{ 
-                a {
-                    opacity: 1;
-                    line-height: 355px;
-                }
-                p {
-                    opacity: 1;
-                }
+        &:hover{ 
+            a {
+                opacity: 1;
+                line-height: 355px;
             }
+            p {
+                opacity: 1;
+            }
+        }
     }
 
+    &.slider {
+        margin-left: -80px;
+        margin-right: -80px;
+
+        .slick-list {
+            margin: 0 -16px;
+        }
+
+        .project_item {
+            margin: 0 15px 30px 15px;
+            width: calc(33.3% - 31px);
+            height: 360px;
+    
+        }
+    }
+
+}
+
+#projects {
+    .projects {
+        margin-left: -80px;
+        margin-right: -80px;
+    
+        .project_item {
+            margin: 0;
+    
+            &:nth-child(1) {
+                float: left;
+                width: calc(46.4% - 30px);
+                height: 350px;
+                margin: 0 30px 30px 0;
+                &:hover a {
+                    line-height: 350px;
+                }
+            }
+    
+            &:nth-child(2) {
+                //float: left;
+                //clear: left;
+                width: 23.5%;
+                height: 600px;
+                margin-bottom: -285px;
+                
+                &:hover a {
+                    line-height: 600px;
+                }
+            }
+    
+            &:nth-child(3) {
+                float: right;
+                //clear: left;
+                width: calc(30.1% - 30px);
+                height: 285px;
+                margin: 0 0 30px 30px;
+                
+                &:hover a {
+                    line-height: 285px;
+                }
+            }
+            &:nth-child(4) {
+                float: right;
+                //clear: left;
+                width: calc(30.1% - 30px);
+                height: 285px;
+                margin: 0 0 0px 30px;
+                &:hover a {
+                    line-height: 285px;
+                }
+            }
+    
+            &:nth-child(5) {
+                float: left;
+                clear: left;
+                width: calc(23.2% - 30px);
+                height: 220px;
+                margin: 0 30px 0px 0;
+                &:hover a {
+                    line-height: 220px;
+                }
+            }
+            &:nth-child(6) {
+                float: left;
+                //clear: left;
+                width: calc(23.2% - 30px);
+                height: 220px;
+                margin: 0 30px 0px 0;
+                &:hover a {
+                    line-height: 220px;
+                }
+            }
+        }
+    }
 }
 
 
