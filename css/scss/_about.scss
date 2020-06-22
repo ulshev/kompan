@@ -13,7 +13,7 @@
 
     .text {
         margin-left: 50%;
-        min-height: 525px;
+        min-height: 543px;
         padding: 46px 0 50px 145px;
     }
 
@@ -21,7 +21,8 @@
         position: absolute;
         width: 100%;
         left: 0;
-        bottom: 0;
+        top: -143px;
+        //bottom: 0;
         //z-index: 1;
 
         img {
@@ -41,18 +42,48 @@
 }
 
 #about_page {
-    #about {
-        .image {
-            //opacity: 0.5;
-            top: -90px;
-        }  
+    //#about {
+        //opacity: 0.5;
+        // .image {
+        //     //opacity: 0.5;
+        //     //top: -90px;
+        // }  
         
+        // .text {
+        //     //padding-top: 30px;
+        //     //min-height: 648px;
+        // }
+    //}
+    .text_block {
         .text {
-            padding-top: 30px;
-            min-height: 648px;
+            padding-bottom: 15px;
         }
     }
-    
+    .text_block.right_img {
+        .text {
+            padding-top: 70px;
+            padding-bottom: 90px;
+        }
+
+        .image {
+            top: 15px;
+        }
+
+        .button {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+    }
+
+    .tabs_container + .buttons {
+        margin-bottom: 20px;
+    }
+
+    .text_image + .text_block {
+        .in {
+            padding-top: 113px;
+        }
+    }
 }
 
 

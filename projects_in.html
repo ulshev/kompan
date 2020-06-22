@@ -11,7 +11,8 @@
     
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css"  media="all" href="css/font.css">
+	<link rel="stylesheet" type="text/css"  media="all" href="css/font.css">
+	<link rel="stylesheet" type="text/css"  media="all" href="css/select2.css">
     
 	    <!--link rel="stylesheet" type="text/css"  media="all" href="css/ModalWindow.css" /><!-- !!! стили не подключать -->
     
@@ -21,10 +22,10 @@
     <!--script type="text/Javascript" src="js/jquery-ui-1.12.1.js"></script-->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-    <!--script type="text/javascript" src="js/zoomsl-3.0.min.js"></script-->
+    <script type="text/javascript" src="js/select2.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script> 
 </head>
-<body id="about_page">
+<body>
     <div class="wrapper">
 	<!-- шапка -->
 	
@@ -55,7 +56,7 @@
 			    <li class="catalog">
 					<a href="catalog.html">Каталог</a>
 			    </li>
-			    <li class="active">
+			    <li>
 					<a href="about.html">О KOMPAN</a>
 					<ul>
 						<li><a href="who_are_we.html">Кто мы</a></li>
@@ -64,7 +65,7 @@
                         <li><a href="certificates.html">Сертификаты</a></li>
 					</ul>
 			    </li>
-			    <li>
+			    <li class="active">
 					<a href="projects.html">Проекты</a>
 			    </li>
 			    <li>
@@ -90,84 +91,104 @@
 	    </div>
 	</header>
     <!-- end шапка -->
-    <div class="breadcrumbs">
+    
+	<div class="breadcrumbs">
         <ul class="in">
             <li><a href="index.html">Главная</a></li>
-            <li class="active">O KOMPAN</li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li class="active">Проект для ЖК «Я - Романтик»</li>
         </ul>
-    </div>
-    
-    <main class="right_img">
-        <div class="image"><img src="images/bg_about_page.jpg" alt=""></div>
+	</div>
+	
+	<main>
         <div class="in">
-
-            <h1>KOMPAN</h1>
-            <div class="text">
-                <p>Ведущая международная компания, которая занимается разработкой и производством детского игрового и спортивного оборудования. Штаб-квартира находится в Дании, а её офисы и торговые представительства расположены в Европе, Северной Америке, Юго-восточной Азии и Австралии.</p>
-                <ul class="advantages_list">
-                    <li>Высокое качество</li>
-                    <li>Безопасность и экологичность</li>
-                    <li>Уникальный дизайн</li>
-                    <li>Выгодные цены</li>
-                    <li>Для всех возрастных групп</li>
-                    <li>Пожизненная гарантия</li>
-                </ul>
-                <a class="button" href="#">Оставить заявку</a>
+            <h1>Проект для ЖК «Я - Романтик»</h1>
+            <div class="idea">
+                <h2>Идея</h2>
+                <div class="image"><img src="images/projects_idea.jpg" alt=""></div>
             </div>
-        </div>
-    </main>
+            <div class="implementation">
+                <h2>Реализация</h2>
+                <div class="image"><img src="images/projects_implementation.jpg" alt=""></div>
+            </div>
 
+            <h2>О проекте</h2>
+            <div class="text description">
+                <a href="projects.html" class="all_link">Все проекты</a>
 
-    <!-- О KOMPAN -->
-	<div class="main_section" id="about">
-		<h2 class="h1">О KOMPAN</h2>
-		<div class="image"><img src="images/bg_about3_alt.jpg" alt=""></div>
-		<div class="in">
-			<div class="text">
-				<h3>Забота KOMPAN - это:</h3>
-				<ul>
-					<li>100% безопасные материалы для производства;</li>
-					<li>100% переработка продуктов, остающихся после производства оборудования;</li>
-					<li>Соблюдение стандарта EN 71-3;</li>
-					<li>Древесина сертифицированна FSC;</li>
-					<li>Поддержка 10-ти принципов Глобального договора ООН;</li>
-					<li>Соответствие ЕАЭС 042/2017 «О безопасности оборудования для детских игровых площадок»</li>
-				</ul>
-				<a href="#" class="button">Заказать проект</a>
-			</div>
-	    </div>
-	</div>
-	<!-- end О KOMPAN -->
+                <h4>Проект для ЖК «Я - Романтик»</h4>
+                <div class="par">
+                    <strong>Заказчик:</strong>
+                    <p>Seven Suns Development</p>
+                </div>
+                <div class="par">
+                    <strong>Адрес объекта:</strong>
+                    <p>Санкт-Петербург, Невская губа, уч.25</p>
+                </div>
+                <div class="par">
+                    <strong>Площадь объекта:</strong>
+                    <p>30 м2</p>
+                </div>
+                <div class="par">
+                    <strong>Оборудование на объекте:</strong>
+                    <p>Карусели и вертушки, скамья со спинкой, качели-балансиры,  горки </p>
+                </div>
+                <div class="par">
+                    <strong>Выполненные работы:</strong>
+                    <p>Установка и сборка оборудования детских площадок</p>
+                </div>
+                <div class="par">
+                    <strong>Описание:</strong>
+                    <p>Интуитивно понятная игровая структура, которая вызывает любопытство и желание играть даже у самых упрямых и неактивных подростков.</p>
+                    <p>Игровая площадка - это совершенствованное скалолазание, как по вертикали, так и по горизонтали, динамические упражнения на вращение, тренировка силы и равновесия, а также самые крутые места для общения с друзьями.</p>
+                    <p>Оборудование рассчитано для детей всех возрастов и способностей.</p>
+                </div>
+            </div>
+            
+            <div class="images_slider">
+                <div class="main_img">
+                    <div class="slide">
+                        <a data-fancybox="gallery" href="images/project_image1.jpg"><img src="images/project_image1.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a data-fancybox="gallery" href="images/project_image2.jpg"><img src="images/project_image2.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a data-fancybox="gallery" href="images/project_image3.jpg"><img src="images/project_image3.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a data-fancybox="gallery" href="images/project_image4.jpg"><img src="images/project_image4.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a data-fancybox="gallery" href="images/project_image1.jpg"><img src="images/project_image1.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a data-fancybox="gallery" href="images/project_image2.jpg"><img src="images/project_image2.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="small_images">
+                    <div class="img_small"><img src="images/project_image1.jpg" alt=""></div>
+                    <div class="img_small"><img src="images/project_image2.jpg" alt=""></div>
+                    <div class="img_small"><img src="images/project_image3.jpg" alt=""></div>
+                    <div class="img_small"><img src="images/project_image4.jpg" alt=""></div>
+                    <div class="img_small"><img src="images/project_image1.jpg" alt=""></div>
+                    <div class="img_small"><img src="images/project_image2.jpg" alt=""></div>
+                </div>
+            </div>
 
+            <div class="text about_customer">
+                <p>Заказчик: Seven Suns Development. Адрес объекта: Санкт-Петербург, Невская губа, уч.25</p>
+                <p>Интуитивно понятная игровая структура, которая вызывает любопытство и желание играть даже у самых упрямых и неактивных подростков.</p>
+                <p>Игровая площадка - это совершенствованное скалолазание, как по вертикали, так и по горизонтали, динамические упражнения на вращение, тренировка силы и равновесия, а также самые крутые места для общения с друзьями.</p>
+                <p>Оборудование рассчитано для детей всех возрастов и способностей.</p>
+                <a class="button" href="#">Заказать проект</a>
+            </div>
 
-    <!-- Продукция -->
-	<div class="main_section">
-	    <div class="in">
-			<div class="production">
-				<div class="item">
-					<div class="bg" style="background-image: url(images/bg_prod_item9.jpg);"></div>
-					<div class="h6"><b>Кто мы</b></div>
-					<a href="who_are_we.html"><span>Подробнее</span></a>
-				</div>
-				<div class="item">
-					<div class="bg" style="background-image: url(images/bg_prod_item10.jpg);"></div>
-					<div class="h6"><b>Качество материалов</b></div>
-					<a href="quality_of_materials.html"><span>Подробнее</span></a>
-				</div>
-				<div class="item">
-					<div class="bg" style="background-image: url(images/bg_prod_item11.jpg);"></div>
-					<div class="h6"><b>Институт игр KOMPAN</b></div>
-					<a href="game_institute.html"><span>Подробнее</span></a>
-				</div>
-				<div class="item">
-					<div class="bg" style="background-image: url(images/bg_prod_item12.jpg);"></div>
-					<div class="h6"><b>Сертификаты</b></div>
-					<a href="certificates.html"><span>Подробнее</span></a>
-				</div>
-			</div>
+            <div class="project_map">
+                <img src="images/project_map.jpg" alt="">
+            </div>
 		</div>
-	</div>
-	<!-- end Продукция -->
+	</main>
 
     <!-- Форма -->
 	<div class="main_section" id="main_form">

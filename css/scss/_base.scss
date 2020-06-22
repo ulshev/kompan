@@ -60,7 +60,7 @@ body {
     min-height: 100%;
     //display: table;
     
-	 background: url(images/site.jpg) center 10px no-repeat;
+	//background: url(images/site.jpg) center 0px no-repeat;
 	// background-size: auto;
 }
 //#index, #about_page, #product {
@@ -501,7 +501,8 @@ ul.slick-dots {
 
 .tabs_container {
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 70px;
+
 }
     
 .tab {
@@ -820,4 +821,33 @@ ul.slick-dots {
 }
 
 
+.certificates {
+	.slick-list {
+		margin: 60px -15px -30px;
+	}
+	.cert {
+		box-sizing: border-box;
+		margin: 0 15px;
+		border-radius: 5px;
+
+		a {
+			display: block;
+			color: $color_text;
+			text-align: center;
+
+			img {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 12px 30px;
+				border: 3px solid #dfedee;
+			}
+
+			.h5 {
+				padding: 11px 30px;
+				display: block;
+
+			}
+		}
+	}
+}
 

@@ -220,12 +220,12 @@ $(document).ready(function() {
 
 	
 	
-	$('.sertificates_block .slider').slick({
-	    slidesToShow: 1,
+	$('.certificates').slick({
+	    slidesToShow: 4,
 	    slidesToScroll: 1,
 	    arrows: true,
 	    dots: false,
-	    fade: true,
+	    //fade: true,
 	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
 	    nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
@@ -287,14 +287,14 @@ $(document).ready(function() {
 	    nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
 	
-	$('.products_images .main_img').slick({
+	$('.images_slider .main_img').slick({
 	    slidesToShow: 1,
 	    slidesToScroll: 1,
 	    arrows: false,
 	    fade: true,
 	    //variableWidth: true,
 	    adaptiveHeight: true,
-	    asNavFor: '.products_images .small_images',
+	    asNavFor: '.images_slider .small_images',
 	    responsive: [
 		  {
 		    breakpoint: 451,
@@ -306,29 +306,28 @@ $(document).ready(function() {
 		  },
 		]
 	  });
-	$('.products_images .small_images').slick({
+	$('.images_slider .small_images').slick({
 	    slidesToShow: 3,
 	    slidesToScroll: 1,
 	    arrows: true,
 	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
 	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    asNavFor: '.products_images .main_img',
+	    asNavFor: '.images_slider .main_img',
 	    dots: false,
 	    //centerMode: true,
-	    vertical: true,
-	    focusOnSelect: true,
+	    //vertical: true,
+	    //focusOnSelect: true,
 	    responsive: [
 		  {
 		    breakpoint: 801,
 		    settings: {
-		      vertical: false,
 		      slidesToShow: 2,
 		    }
 		  },
 		  {
 		    breakpoint: 601,
 		    settings: {
-		      vertical: true,
+		      //vertical: true,
 		      slidesToShow: 3,
 		    }
 		  },

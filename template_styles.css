@@ -80,7 +80,6 @@ body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  background: url(images/site.jpg) center 10px no-repeat;
 }
 
 #page404 .wrapper {
@@ -476,7 +475,7 @@ ul.slick-dots li button {
 }
 .tabs_container {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .tab {
@@ -752,6 +751,30 @@ ul.slick-dots li button {
   margin-left: 10px;
   margin-bottom: -2px;
   background: url(images/icon_download.png) center no-repeat;
+}
+
+.certificates .slick-list {
+  margin: 60px -15px -30px;
+}
+.certificates .cert {
+  box-sizing: border-box;
+  margin: 0 15px;
+  border-radius: 5px;
+}
+.certificates .cert a {
+  display: block;
+  color: #333333;
+  text-align: center;
+}
+.certificates .cert a img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 30px;
+  border: 3px solid #dfedee;
+}
+.certificates .cert a .h5 {
+  padding: 11px 30px;
+  display: block;
 }
 
 /* start header styles */
@@ -1643,6 +1666,7 @@ footer #copy {
   margin-bottom: 10px;
   font-weight: 900;
   text-transform: uppercase;
+  text-align: left;
 }
 #main_screen .button {
   min-width: 173px;
@@ -2275,6 +2299,9 @@ ul.strong li {
   margin-left: -80px;
   margin-right: -80px;
 }
+.projects.slider.tab {
+  margin-bottom: 0;
+}
 .projects.slider .slick-list {
   margin: 0 -16px;
 }
@@ -2346,6 +2373,59 @@ ul.strong li {
   line-height: 220px;
 }
 
+.idea, .implementation {
+  width: calc(50% - 15px);
+  margin-right: 30px;
+  float: left;
+  margin-bottom: 100px;
+}
+.idea h2, .implementation h2 {
+  text-transform: none;
+}
+.idea .image, .implementation .image {
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.idea .image img, .implementation .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.implementation {
+  margin-right: 0px;
+}
+
+.text.description {
+  float: right;
+  width: calc(50% - 15px);
+}
+.text.description .all_link {
+  margin-top: 50px;
+}
+
+.about_customer {
+  clear: both;
+  float: left;
+  width: calc(50% - 15px);
+  padding-top: 76px;
+  margin-bottom: 20px;
+}
+.about_customer .button {
+  margin-top: 50px;
+}
+
+.project_map {
+  width: calc(50% - 15px);
+  float: right;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
 /* end projects styles */
 /* start about styles */
 #about {
@@ -2358,14 +2438,14 @@ ul.strong li {
 }
 #about .text {
   margin-left: 50%;
-  min-height: 525px;
+  min-height: 543px;
   padding: 46px 0 50px 145px;
 }
 #about .image {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  top: -143px;
 }
 #about .image img {
   width: 100%;
@@ -2381,12 +2461,25 @@ ul.strong li {
   z-index: 2;
 }
 
-#about_page #about .image {
-  top: -90px;
+#about_page .text_block .text {
+  padding-bottom: 15px;
 }
-#about_page #about .text {
-  padding-top: 30px;
-  min-height: 648px;
+#about_page .text_block.right_img .text {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+#about_page .text_block.right_img .image {
+  top: 15px;
+}
+#about_page .text_block.right_img .button {
+  margin-top: 50px;
+  font-size: 20px;
+}
+#about_page .tabs_container + .buttons {
+  margin-bottom: 20px;
+}
+#about_page .text_image + .text_block .in {
+  padding-top: 113px;
 }
 
 /* end about styles */
@@ -3043,16 +3136,51 @@ main p {
 }
 .right_img .text, .left_img .text {
   margin-right: 51%;
-  padding-bottom: 50px;
-  min-height: 525px;
+  padding-bottom: 150px;
 }
 .right_img .advantages_list, .left_img .advantages_list {
   margin-right: -52%;
+}
+.right_img .button, .left_img .button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.right_img.no-text .in, .left_img.no-text .in {
+  padding-top: 92px;
+}
+.right_img.no-text .text, .left_img.no-text .text {
+  min-height: 140px;
+}
+.right_img.no-text .button, .left_img.no-text .button {
+  font-size: 14px;
+  margin-top: 0;
 }
 
 .left_img .text {
   margin-right: auto;
   margin-left: 40%;
+}
+
+.text .left, .text .right {
+  max-width: 50%;
+  clear: both;
+}
+.text .left img, .text .right img {
+  max-width: 100%;
+}
+.text .left {
+  float: left;
+  margin: 0 30px 100px 0;
+}
+.text .right {
+  float: right;
+  margin: 0 0 100px 30px;
+}
+.text h2 {
+  clear: both;
+}
+.text .right + p, .text .left + p {
+  padding-top: 50px;
 }
 
 ul.advantages_list {
@@ -3201,20 +3329,103 @@ ul.advantages_list li:nth-child(6n+6)::before {
   object-fit: cover;
   vertical-align: middle;
 }
+.galery .item iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.images_slider {
+  float: left;
+  width: calc(50% - 15px);
+  position: relative;
+  margin-bottom: 60px;
+}
+.images_slider .main_img {
+  height: 545px;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 0 30px;
+  padding: 0;
+}
+.images_slider .main_img .slick-list {
+  margin: 0px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.images_slider .main_img .slide {
+  height: 100%;
+  width: 100%;
+}
+.images_slider .main_img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.images_slider .main_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.images_slider .small_images {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 180px;
+}
+.images_slider .small_images .slick-list {
+  margin: 0 -15px;
+  height: 100%;
+}
+.images_slider .small_images .slick-arrow {
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+}
+.images_slider .small_images .slick-arrow::before {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  width: 7px;
+  height: 7px;
+  top: 9px;
+  left: 10px;
+}
+.images_slider .small_images .slick-prev {
+  left: 20px;
+}
+.images_slider .small_images .slick-next {
+  right: 20px;
+}
+.images_slider .small_images .slick-next::before {
+  left: 7px;
+}
+.images_slider .img_small {
+  height: 180px;
+  overflow: hidden;
+  margin: 0px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: opacity 0.8s ease 0s;
+  -moz-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
+  text-align: center;
+}
+.images_slider .img_small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
 
 #contacts_page main {
   background: url(images/bg_contacts_page.jpg) no-repeat center center/100% auto;
 }
 
-#news_page main .in {
-  padding-top: 113px;
-}
 #news_page main .text {
-  padding-top: 14px;
-  min-height: 302px;
-}
-#news_page main .button {
-  font-size: 14px;
+  min-height: 205px;
 }
 
 #projects_page main .in {
@@ -3300,55 +3511,88 @@ ul.advantages_list li:nth-child(6n+6)::before {
   padding: 17px 0 10px;
 }
 
-#services_page main .in {
-  padding-top: 92px;
-}
 #services_page main h1 {
   margin-right: 60%;
-}
-#services_page main .text {
-  padding-top: 30px;
-  min-height: 272px;
 }
 #services_page main .all_link + .h1 {
   margin-bottom: 0px;
 }
-#services_page .text_block.right_img, #services_page .text_block.left_img {
+#services_page .text_image.right_img .image, #services_page .text_image.left_img .image {
+  margin-top: -400px;
+  height: 750px;
+  line-height: 750px;
+}
+#services_page .text_image.right_img .text, #services_page .text_image.left_img .text {
+  padding-top: 5px;
+  padding-bottom: 87px;
+}
+#services_page .text_image.right_img h3, #services_page .text_image.left_img h3 {
+  margin-bottom: 20px;
+}
+#services_page .text_image.right_img .button, #services_page .text_image.left_img .button {
+  margin-top: 50px;
+}
+#services_page #standards .in {
+  padding: 55px 0 87px;
+}
+#services_page #standards .text {
+  padding-top: 75px;
+}
+#services_page #main_form2 + .text_block .in {
+  padding-top: 85px;
+}
+
+.text_image.right_img, .text_image.left_img {
   overflow: visible;
 }
-#services_page .text_block.right_img .image, #services_page .text_block.left_img .image {
+.text_image.right_img .image, .text_image.left_img .image {
   width: 50%;
+  height: 700px;
+  line-height: 700px;
+  top: 50%;
+  margin-top: -300px;
 }
-#services_page .text_block.right_img .image img, #services_page .text_block.left_img .image img {
+.text_image.right_img .image img, .text_image.left_img .image img {
   max-width: 100%;
   width: auto;
+  vertical-align: middle;
 }
-#services_page .text_block.right_img .in, #services_page .text_block.left_img .in {
-  padding: 70px 0 10px;
+.text_image.right_img .in, .text_image.left_img .in {
+  padding: 65px 0 10px;
 }
-#services_page .text_block.right_img .all_link, #services_page .text_block.left_img .all_link {
+.text_image.right_img .text, .text_image.left_img .text {
+  padding-top: 66px;
+  padding-bottom: 20px;
+}
+.text_image.right_img .all_link, .text_image.left_img .all_link {
   float: none;
   display: inline-block;
   margin-bottom: 50px;
 }
-#services_page .text_block.right_img h3, #services_page .text_block.left_img h3 {
+.text_image.right_img h3, .text_image.left_img h3 {
   font-size: 25px;
+  margin-bottom: 30px;
 }
-#services_page .text_block.right_img .button, #services_page .text_block.left_img .button {
-  margin-top: 49px;
+.text_image.right_img ul, .text_image.left_img ul {
+  margin-bottom: 30px;
 }
-#services_page .text_block.right_img .image {
+.text_image.right_img .button, .text_image.left_img .button {
+  margin-top: 30px;
+}
+
+.text_image.right_img .image {
   text-align: right;
   left: auto;
   right: 0;
 }
-#services_page .text_block.right_img .text {
-  margin-right: 43%;
+.text_image.right_img .text {
+  margin-right: 42%;
 }
-#services_page .text_block.left_img .image {
+
+.text_image.left_img .image {
   text-align: left;
 }
-#services_page .text_block.left_img .text {
+.text_image.left_img .text {
   margin-left: 42.5%;
 }
 
@@ -3361,6 +3605,35 @@ ul.advantages_list li:nth-child(6n+6)::before {
 #standards.text_block.right_img .text {
   padding-top: 79px;
   margin-right: 39%;
+}
+
+#game_institute .right_img .text, #game_institute .left_img .text {
+  padding-bottom: 110px;
+}
+#game_institute .text_block.right_img .image, #game_institute .text_block.left_img .image {
+  top: -10px;
+}
+#game_institute .text_block.right_img .text, #game_institute .text_block.left_img .text {
+  padding-top: 68px;
+  margin-right: 43%;
+}
+#game_institute .text_image.right_img .image, #game_institute .text_image.left_img .image {
+  margin-top: -385px;
+}
+#game_institute .text_image + .text_block .in {
+  padding-top: 62px;
+  padding-bottom: 20px;
+}
+#game_institute .text_image + .text_block .tabs_container {
+  padding-top: 15px;
+  margin-bottom: 60px;
+}
+
+#directions_in main .in {
+  padding-top: 60px;
+}
+#directions_in main .button {
+  margin-top: 50px;
 }
 
 /* end content styles */
