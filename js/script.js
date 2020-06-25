@@ -361,4 +361,21 @@ $(document).ready(function() {
 	
 
 	$('select').select2();
+
+	$( "#slider-range" ).slider({
+		range: true,
+		min: 2,
+		max: 8,
+		values: [ 3, 8 ],
+		slide: function( event, ui ) {
+		  $( "#amount-min" ).val( ui.values[ 0 ] );
+		  $( "#amount-max" ).val( ui.values[ 1 ] + "+" );
+		}
+	});
+	$( "#amount-min" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+
+	$( "#amount-max" ).val( $( "#slider-range" ).slider( "values", 1 ) + "+" );
+
+	
+
 });

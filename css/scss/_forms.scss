@@ -218,18 +218,18 @@
 		resize: none;
     }
     
-    /*.check {
+    .check {
 		position: relative;
-		font-weight: 300;
-		font-size: 14px;
-		line-height: 20px;
-		display: inline-block;
-		vertical-align: top;
-		width: 46%;  
-		padding-left: 34px;
-		margin-right: 20px;
-		opacity: 0.8;
-    }*/
+		// font-weight: 300;
+		// font-size: 14px;
+		// line-height: 20px;
+		// display: inline-block;
+		// vertical-align: top;
+		// width: 46%;  
+		// padding-left: 34px;
+		// margin-right: 20px;
+		// opacity: 0.8;
+    }
 
     input[type="radio"], input[type="checkbox"] {
 		width: auto;
@@ -262,16 +262,17 @@
 			top: 5px;
 		}
 		
-		// &:after {
-		// 	content: '';
-		// 	width: 12px;
-		// 	height: 9px;
-		// 	background: url(images/check.png) no-repeat center ;
-		// 	position: absolute;
-		// 	left: 4px;
-		// 	top: 16px;
-		// 	@include transition(all);
-		// }
+		&:after {
+			content: '';
+			width: 19px;
+			height: 13px;
+			background: url(images/check.png) no-repeat center ;
+			position: absolute;
+			left: 3px;
+			top: 5px;
+			@include transition(all);
+			opacity: 0;
+		}
 
 		&:hover {
 			opacity: 0.8;
@@ -281,13 +282,13 @@
     }
     input[type="checkbox"]:checked + label {
 	
-		// &:after {
-		// 	opacity: 0;
-		// }
-
-		&:before {
-			background: #C6CBCC;
+		&:after {
+			opacity: 1;
 		}
+
+		// &:before {
+		// 	background: #C6CBCC;
+		// }
 	}
 	
 	a {
@@ -321,7 +322,7 @@
 		//padding-top: 13px;
     //}
     
-    button[type="submit"], .gUniForm .uFormSubmit, .gUniFormSuccessButton {
+    button[type="submit"], button[type="reset"], .gUniForm .uFormSubmit, .gUniFormSuccessButton {
 	    margin-right: 0;
 	    margin-bottom: 20px;
 	    padding: 0 10px 0 10px;
@@ -338,7 +339,7 @@
 	    box-sizing: border-box;
 	    @include transition(all);
 	    border: 0;
-	    border-radius: 25px;
+	    border-radius: 35px;
 	    text-align: center;
 	    position: relative;
 	    vertical-align: middle;
@@ -355,7 +356,7 @@
 		
 		&:focus {
 			outline: 0;
-			color: #fff;
+			//color: #fff;
 			&:before {
 			animation: effect_dylan 1.2s ease-out;
 			}

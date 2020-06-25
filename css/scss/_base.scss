@@ -704,7 +704,7 @@ ul.slick-dots {
 .pagination {
     margin-bottom: 50px;
     text-align: center;
-    li {
+    ul li {
 		display: inline-block;
 		vertical-align: middle;
 		text-align: center;
@@ -712,8 +712,11 @@ ul.slick-dots {
 		font-size: 20px;
 		line-height: 32px;
 		margin: 0 6px;
+		padding-left: 0;
 	
-	
+		&::before {
+			display: none;
+		}
 		a {
 			display: block;
 			text-decoration: none;
