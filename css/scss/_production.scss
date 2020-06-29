@@ -755,25 +755,71 @@ div.catalog + .pagination {
 
 
 @media screen and (max-width: 1600px) {
-    
+    .production {
+        margin:  0px -15px;
+        .item {
+            margin: 0 15px 30px 15px;
+            height: 300px;
+        }
+    }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
+    .production {
+        margin:  0px -15px;
+        .item {
+            margin: 0 15px 30px 15px;
+            height: 250px;
+        }
+    }
     
 }
 
-@media screen and (max-width: 1100px) {
-    
+@media screen and (max-width: 1000px) {
+    #production {
+        padding-bottom: 70px;
+    }
+    .production {
+        margin:  0px -15px;
+        .item {
+            margin: 0 15px 30px 15px;
+            height: 250px;
+            .h6 b {
+                line-height: 18px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
    
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    #production {
+        .all_link {
+            float: none;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     
 }
 
+
+@media screen and (max-width: 600px) {
+   
+}
 @media screen and (max-width: 450px) {
-    
+    #production {
+        padding-bottom: 50px;
+    }
+    .production {
+        margin:  0px -5px;
+        .slick-list {
+            padding: 0;
+            margin: 0 -10px;
+        }
+    } 
 }
 
 /* end production styles */

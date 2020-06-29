@@ -1,0 +1,113 @@
+.gUniFormModalWindow.form_block {
+    background: rgba(51, 51, 51, 0.9);
+
+
+    .gUniFormModalWindowContainer {
+        box-shadow: 0;
+        border-radius: 5px;
+        line-height: 28px;
+        padding: 3px;
+        width: 795px;
+        background: linear-gradient(101deg, #cea822 0%, #fcff70 100%);
+        overflow: hidden;
+    }
+
+    .gUniFormContainer {
+        background: #fff;
+        border-radius: 5px;
+        padding: 60px 30px 0px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .uFormHeading {
+        font-family: $font_family_os;
+        line-height: 28px;
+        font-weight: 800;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .uFormLine:nth-child(1), .uFormLine:nth-child(2), .uFormLine:nth-child(3) {
+        width: 275px;
+        margin-bottom: 20px;
+    }
+
+    .gUniForm input[type="text"] {
+        padding: 10px 30px;
+        height: 60px;
+    }
+
+    .personalInfo {
+        display: inline-block;
+        vertical-align: top;
+        width: 280px;
+        margin-right: 20px;
+        padding-top: 5px;
+        font-size: 14px;
+        line-height: 19px;
+
+
+        input[type=checkbox]:not(checked) + label:before {
+            top: 0px;
+        }
+        input[type=checkbox]:not(checked) + label:after {
+            top: 0px;
+        }
+    }
+
+    .gUniForm .uformTools {
+        margin-top: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 280px;
+    }
+
+    .gUniForm .uFormButton:last-child {
+        padding-left: 0px;
+    }
+    .gUniForm .uFormButton:first-child {
+        padding-right: 0px;
+    }
+
+    .gUniForm .uFormButton {
+        width: 100%;
+    }
+
+    .gUniFormModalWindowExit {
+        background: url(images/exit.png) 0 0 no-repeat transparent;
+        right: 30px;
+        top: 30px;
+        height: 20px;
+        width: 20px;
+        @include transition(all);
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    
+    &.modal_big {
+        .gUniFormModalWindowContainer {
+            width: 1095px;
+        }
+
+        .gUniForm .uformTools {
+            float: right;
+        }
+    }
+    .personalInfo {
+        float: left;
+        width: auto;
+        padding-top: 25px;
+    }
+}

@@ -297,23 +297,170 @@
 @media screen and (max-width: 1600px) {
     
 }
-@media screen and (max-width: 1400px) {
-    
+@media screen and (max-width: 1300px) {
+    #projects {
+        .projects {
+            .project_item{
+                &:nth-child(1) {
+                    height: 310px;
+                    &:hover a {
+                        line-height: 310px;
+                    }
+                }
+        
+                &:nth-child(2) {
+                    height: 520px;
+                    &:hover a {
+                        line-height: 520px;
+                    }
+                }
+        
+                &:nth-child(3) {
+                    height: 245px;
+                    &:hover a {
+                        line-height: 245px;
+                    }
+                }
+                &:nth-child(4) {
+                    height: 245px;
+                    &:hover a {
+                        line-height: 245px;
+                    }
+                }
+        
+                &:nth-child(5) {
+                    height: 180px;
+                    &:hover a {
+                        line-height: 180px;
+                    }
+                }
+                &:nth-child(6) {
+                    height: 180px;
+                    &:hover a {
+                        line-height: 180px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1100px) {
-    
+    #projects .projects {
+        margin: 0 -20px 40px;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #projects {
+        .projects {
+            .project_item{
+                &:nth-child(1) {
+                    height: 280px;
+                    &:hover a {
+                        line-height: 280px;
+                    }
+                }
+                &:nth-child(2) {
+                    height: 460px;
+                    &:hover a {
+                        line-height: 460px;
+                    }
+                }
+        
+                &:nth-child(3) {
+                    height: 215px;
+                    &:hover a {
+                        line-height: 215px;
+                    }
+                }
+                &:nth-child(4) {
+                    height: 215px;
+                    &:hover a {
+                        line-height: 215px;
+                    }
+                }
+        
+                &:nth-child(5) {
+                    height: 150px;
+                    &:hover a {
+                        line-height: 150px;
+                    }
+                }
+                &:nth-child(6) {
+                    height: 150px;
+                    &:hover a {
+                        line-height: 150px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
-   
+    #projects {
+        .projects {
+            .project_item{
+                &:nth-child(1),  &:nth-child(2), &:nth-child(3), &:nth-child(4),  &:nth-child(5),  &:nth-child(6) {
+                    height: 200px;
+                    width: calc(50% - 15px);
+                    float: left;
+                    margin: 0 0 30px;
+                    &:hover a {
+                        line-height: 200px;
+                    }
+                }
+                &:nth-child(1),  &:nth-child(3),  &:nth-child(5) {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 600px) {
-    
+    #projects {
+        .projects {
+            .project_item{
+                &:nth-child(1),  &:nth-child(2), &:nth-child(3), &:nth-child(4),  &:nth-child(5),  &:nth-child(6) {
+                    height: 160px;
+                    width: calc(50% - 10px);
+                    margin: 0 0 20px;
+                    &:hover a {
+                        line-height: 160px;
+                    }
+                }
+                &:nth-child(1),  &:nth-child(3),  &:nth-child(5) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
-    
+    #projects {
+        .projects {
+            margin: 0 0px 20px;
+            padding: 0 40px;
+            .project_item{
+                &:nth-child(1),  &:nth-child(2), &:nth-child(3), &:nth-child(4),  &:nth-child(5),  &:nth-child(6) {
+                    height: 100px;
+                    margin: 0 0 10px;
+                    &:hover a {
+                        line-height: 120px;
+                    }
+                }
+                &:nth-child(1),  &:nth-child(3),  &:nth-child(5) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    #index #projects {
+        padding-bottom: 50px;
+    }
 }
 
 /* end projects styles */

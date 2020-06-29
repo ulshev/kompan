@@ -3,6 +3,7 @@
 #main_form {
 	//z-index: 1;
 	background: #fff url(images/bg_form_block.jpg) center 37% no-repeat;
+	background-size: 100% auto;
     //opacity: 0.5;
     .in {
 	padding-top: 71px;
@@ -173,28 +174,28 @@
 		font-family: $font_family_os;
 		font-size: 18px;
 		line-height: 44px;
-		font-weight: 300;
+		font-weight: 400;
 		vertical-align: top;
 		//border-radius: 22px;
 		
-		&::-webkit-input-placeholder {opacity: 1; color: #000;}
-		&::-moz-placeholder          {opacity: 1; color: #000;}/* Firefox 19+ */
-		&:-moz-placeholder           {opacity: 1; color: #000;}/* Firefox 18- */
-		&:-ms-input-placeholder      {opacity: 1; color: #000;}
+		&::-webkit-input-placeholder {opacity: 0.5; color: #333333;}
+		&::-moz-placeholder          {opacity: 0.5; color: #333;}/* Firefox 19+ */
+		&:-moz-placeholder           {opacity: 0.5; color: #333;}/* Firefox 18- */
+		&:-ms-input-placeholder      {opacity: 0.5; color: #333;}
     }
     
-    .input_file {
-		float: left;
-		padding-top: 5px;
-		margin-right: 20px;
-		width: 55%;
-		margin-bottom: 0;
-		line-height: 24px;
-    }
+    // .input_file {
+	// 	float: left;
+	// 	padding-top: 5px;
+	// 	margin-right: 20px;
+	// 	width: 55%;
+	// 	margin-bottom: 0;
+	// 	line-height: 24px;
+    // }
     
-    .input_file + .uFormLine {
-		text-align: right;
-    }
+    // .input_file + .uFormLine {
+	// 	text-align: right;
+    // }
     
     // input[type="file"] {
 	// 	border: 1px solid $color_a_hover;
@@ -449,179 +450,100 @@
 
 
 
-@media screen and (max-width: 1600px) {
-    
-}
+// @media screen and (max-width: 1600px) {
+//     #main_form {
+// 		//background-position: center center;
+// 	}
+// }
 
 @media screen and (max-width: 1400px) {
-    #main_form {
-	.in {
-	    padding-top: 63px;
-	    padding-bottom: 43px;
-	}
-	
-	.text {
-	    padding-top: 68px;
-	    width: 35%;
-	    line-height: 30px;
-	}
-	
-	h2 {
-	    margin-bottom: 30px;
-	}
-	
-	p {
-	    margin-bottom: 30px;
-	}
-	
-	.form_block {
-	    margin-left: 39%;
-	}
-    }
     
-    .form_block {
-	
-	input, textarea {
-	    font-size: 14px;
-	}
-	input[type="checkbox"]:not(checked) + label {
-	    &:before {
-		top: 7px;
-	    }
-	    
-	    &:after {
-		top: 13px;
-	    }
-	    
-	    
-	}
-    }
 }
 @media screen and (max-width: 1300px) {
-    .form_block {
-	.feedback-form-bot {
-	    float: left;
-	    //clear: left;
+    #main_form .in {
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
-    }
 }
+
 @media screen and (max-width: 1200px) {
-    
-}
-@media screen and (max-width: 1000px) {
     .form_block {
-	.uFormLine {
-	    margin-bottom: 20px;
-	    
-	    &:nth-child(2), &:nth-child(3) {
-		float: none;
-		width: auto;
-	    }
-	    
-	    &:nth-child(3) {
-		margin-left: 0;
-	    }
-	    
-	    &:nth-child(4) {
-		clear: both;
-	    }
-	}
-	
-	.input_file {
-	    float: none;
-	    padding-top: 0px;
-	    margin-right: 0px;
-	    width: auto;
-	    margin-bottom: 10px;
-	}
-	
-	.input_file + .uFormLine {
-	    text-align: left;
-	}
+		form {
+			max-width: 80%;
+		}
+
+		input, textarea {
+			padding: 5px 20px;
+			height: 50px;
+			font-size: 16px;
+			line-height: 40px;
+		}
+
+		textarea {
+			height: 120px;
+		}
+
+		button[type="submit"], button[type="reset"], .gUniForm .uFormSubmit, .gUniFormSuccessButton {
+			margin-bottom: 20px;
+			width: 220px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 18px;
+			letter-spacing: 0;
+		}
     }
-    
-    #main_form {
-	.in {
-	    padding-top: 40px;
-	    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+	#main_form .in {
+		padding-top: 0px;
 	}
-	
-	.text {
-	    padding-top: 0px;
-	    width: 30%;
-	    line-height: 25px;
-	}
-	
-	h2 {
-	    margin-bottom: 25px;
-	}
-	
-	p {
-	    margin-bottom: 25px;
-	}
-	
 	.form_block {
-	    margin-left: 34%;
-	}
+		form {
+			max-width: 90%;
+		}
+		.feedback-form-bot {
+			width: 50%;
+			max-width: 300px;
+			margin-top: 0;
+		}
     }
 }
 
 @media screen and (max-width: 800px) {
-    #main_form {
-	.text {
-	    width: 40%;
+	#main_form .in {
+		padding-bottom: 0px;
 	}
-	
-	.form_block {
-	    margin-left: 41%;
-	    .uFormLine {
-		&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-		    float: none;
-		    width: calc(100% - 25px);
+    #main_form .form_block {
+
+		.uFormLine:nth-child(2), .uFormLine:nth-child(3) {
+			width: calc(50% - 14px);
 		}
-		
-		&:nth-child(6) {
-		    float: none;
+		.uFormLine:nth-child(2) {
+			margin-left: 0;
 		}
-	    }
-	}
+		.uFormLine:nth-child(1) {
+			width: auto;
+			display: block;
+		}
     }
 }
+
 @media screen and (max-width: 600px) {
-    #main_form {
-	.text {
-	    width: auto;
-	    float: none;
-	    margin-bottom: 20px;
-	    line-height: 20px;
-	}
-	
-	h2 {
-	    margin-bottom: 15px;
-	}
-	
-	p {
-	    margin-bottom: 15px;
-	}
-	
-	.form_block {
-	    margin-left: 0;
-	    .uFormLine {
-		margin-left: 0;
-		width: 100%;
-		&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-		    width: 100%;
+    .form_block, #main_form .form_block {
+		.feedback-form-bot {
+			width: auto;
+			max-width: none;
+			float: none;
 		}
-	    }
-	    .feedback-form-bot {
-		float: none;
-		margin-left: 0;
-	    }
-	    .uFormButton {
-		text-align: left;
-		padding-top: 0px;
-	    }
-	}
+		.uFormLine:nth-child(1), .uFormLine:nth-child(2), .uFormLine:nth-child(3) {
+			width: auto;
+			display: block;
+			margin-left: 0;
+		}
+		button[type="submit"], button[type="reset"], .gUniForm .uFormSubmit, .gUniFormSuccessButton {
+			float: none;
+		}
     }
 }
 

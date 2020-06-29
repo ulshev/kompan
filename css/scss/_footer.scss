@@ -12,7 +12,6 @@ footer {
     z-index: 1;
     box-sizing: border-box;
     clear: both;
-    //padding-bottom: 98px;
     
     &:after {
 		content: '';
@@ -40,8 +39,6 @@ footer {
     a {
 		color: $color_text;
     }
-
-    
     .foo_left {
 		float: left;
 		width: 555/1530*100%;
@@ -61,23 +58,13 @@ footer {
     
     .foo_logo {
 		margin-bottom: 35px;
-		width: 100%;
+		//width: 100%;
 		max-width: 230px;
 		
 		img {
 			width: 100%;
 		}
 	}
-	
-	// .cont {
-	// 	position: relative;
-	// 	padding-left: 32px;
-	// 	background: left 0px no-repeat;
-	// 	font-size: 20px;
-	// 	line-height: 27px;
-	// 	font-weight: 500;
-	// 	margin-bottom: 31px;
-	// }
     
     .tel {
 		background-image: url(images/icon_tel_black.png);
@@ -85,38 +72,11 @@ footer {
         
     .address {
 		background-image: url(images/icon_address_black.png);
-		// margin-top: -7px;
-		// padding-top: 5px;
 	}
 	.mail {
 		background-image: url(images/icon_mail_black.png);
-		// background-position: 2px 4px;
 	}
 	
-	// .social {
-	// 	padding-top: 12px;
-	// 	margin-bottom: 30px;
-	// 	a {
-	// 		position: relative;
-	// 		display: inline-block;
-	// 		margin: 0 26px 0 0;
-
-	// 		img {
-	// 			position: relative;
-	// 			-webkit-transition: opacity 0.3s ease 0s;
-	// 			-moz-transition: opacity 0.3s ease 0s;
-	// 			-o-transition: opacity 0.3s ease 0s;
-	// 			transition: opacity 0.3s ease 0s;
-	// 			opacity: 1;
-	// 		}
-
-	// 		&:hover {
-	// 			img {
-	// 				opacity: 0.73;
-	// 			}
-	// 		}
-	// 	}
-	// }
     
     .foo_menu {
 		width: 420/1530*100%;
@@ -148,10 +108,6 @@ footer {
 	
     }
     .foo_text {
-		// border-top: 1px solid #959595;
-		// padding-top: 30px;
-		// margin-bottom: 45px;
-	
 		p {
 			line-height: 26px;
 			margin-bottom: 38px;
@@ -181,7 +137,6 @@ footer {
 		min-height: 45px;
 		font-size: 18px;
 		line-height: 30px;
-		//letter-spacing: 0.8px;
     }
     
 }
@@ -189,194 +144,148 @@ footer {
 
 @media screen and (max-width: 1600px) {
     footer {
-	.tel {
-	    line-height: 25px;
-	    a {
-		margin-left: 0px;
-		display: block;
-	    }
-	}
+		.foo_menu {
+			> ul {
+				margin-right: 0px;
+			}
+		}
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
     footer {
-	.in {
-	    padding-top: 16px;
-	}
-	.foo_top {
-	    height: 58px;
-	    padding-top: 0px;
-	    padding-bottom: 13px;
-	    align-items: center;
-	    //margin-bottom: 16px;
-	}
-	.foo_logo {
-	    img {
-		max-width: 208px;
-	    }
-	}
-	.tel {
-	    line-height: 20px;
-	    a {
-		font-size: 16px;
-	    }
-	}
-	
-	.foo_menu {
-	    width: 185px;
-	    margin-left: 4%;
-	    
-	    &.foo_submenu {
-		width: 600/1566*100%;
-	    }
-	}
-	.foo_presentation {
-	    width: 225px;
-	    margin-top: -10px;
-	}
+		.foo_logo {
+			max-width: 210px;
+		}
+		.foo_menu {
+			padding-top: 0px;
+			width: 120px;
+			> ul {
+				li {
+					display: block;
+					width: auto;
+					margin: 0 0 15px;
+				}
+			}
+		}
+		.foo_bottom {
+			padding-top: 20px;
+		}
+		.button {
+			padding: 0 30px;
+			height: 50px;
+			font-size: 18px;
+			line-height: 50px;
+			letter-spacing: 0.2px;
+			margin-bottom: 30px;
+		}
     }
 }
 
 @media screen and (max-width: 1000px) {
     footer {
-	.foo_left.foo_logo {
-	    width: 22%;
-	    margin-right: 0;
-	    img {
-		width: 150px;
-	    }
-	}
-	
-	.mail {
-	    width: 137px;
-	    line-height: 20px;
-	}
-	
-	.foo_left {
-	    width: 43%;
-	    margin-right: 5%;
-	}
-	
-	.foo_menu {
-	    width: 110px;
-	    margin-left: 0;
-	    margin-bottom: 0;
-	    
-	    &.foo_submenu {
-		width: 110px;
-		clear: right;
-		margin-bottom: 20px;
-		
-		ul {
-		    display: none;
+		.foo_logo {
+			margin-bottom: 20px;
+			max-width: 190px;
 		}
-	    }
-	}
-	.foo_presentation {
-	    float: none;
-	    clear: none;
-	    overflow: hidden;
-	    margin-top: 0;
-	}
-	
-	.foo_text {
-	    clear: none;
-	    float: none;
-	    overflow: hidden;
-	    width: 225px;
-	}
+		.foo_text p {
+			line-height: 20px;
+			margin-bottom: 25px;
+		}
+		.foo_menu {
+			display: none;
+		}
+		.foo_left, .foo_right {
+			width: 48%;
+			max-width: 360px;
+		}
+
+		.button {
+			padding: 0 20px;
+			height: 40px;
+			font-size: 16px;
+			line-height: 40px;
+			letter-spacing: 0.1px;
+			margin-bottom: 30px;
+		}
     }
 }
 
-@media screen and (max-width: 900px) {
+// @media screen and (max-width: 900px) {
+//     footer {
+
+//     }
+// }
+
+@media screen and (max-width: 700px) {
     footer {
-	.foo_left.foo_logo {
-	    float: left;
-	    margin-left: 0;
-	    margin-bottom: 0;
-	    width: 225px;
-	}
-	.foo_top {
-	    display: block;
-	    width: 50%;
-	    height: auto;
-	    margin-right: 0;
-	    margin-bottom: 0px;
-	    float: right;
-	    border-bottom: 0;
-	    clear: right;
-	    .tel, .mail {
-		display: block;
-		width: auto;
-		margin-bottom: 20px;
-	    }
-	}
-	.foo_left {
-	    width: 50%;
-	    margin-left: 5%;
-	    margin-right: 0;
-	    float: right;
-	    clear: none;
-	    max-width: none;
-	    
-	    .h5 {
-		display: none;
-	    }
-	}
-	
-	.foo_menu {
-	    display: none;
-	}
-	
-	.address p {
-	    line-height: 25px;
-	}
+		.foo_logo {
+			float: left;
+			max-width: 170px;
+		}
+		.foo_left, .foo_right {
+			width: auto;
+			margin: 0 auto 20px;
+			max-width: none;
+			float: none;
+			text-align: center;
+		}
+		.cont {
+			display: inline-block;
+			margin: 0 10px 20px;
+		}
+
+		.foo_text {
+			float: right;
+			padding-top: 15px;
+			p {
+				display: none;
+			}
+		}
+		#copy {
+			padding: 15px 10px 27px 0;
+			min-height: 45px;
+			font-size: 16px;
+			line-height: 22px;
+		} 
+		#dev {
+			img {
+				width: 200px;
+			}
+		}
     }
 }
-
-@media screen and (max-width: 600px) {
-    footer {
-	&:after {
-	    height: 50px;
+@media screen and (max-width: 500px) {
+	footer {
+		.foo_logo {
+			max-width: 130px;
+		}
+		.foo_bottom {
+			padding-top: 0px;
+			text-align: center;
+		}
+		#copy, #dev {
+			float: none;
+			//display: inline-block;
+			padding: 0;
+			margin: 0 0 20px;
+		} 
+		footer .foo_text {
+			padding-top: 8px;
+		}
+		.button {
+			font-size: 14px;
+			letter-spacing: 0px;
+			margin-bottom: 20px;
+			padding: 0 15px;
+		}
 	}
-	.foo_text {
-	    border-top: 0;
-	    padding-top: 0;
-	    margin-bottom: 35px;
-	    p {
-		display: none;
-	    }
-	}
-	.foo_presentation {
-	    display: none;
-	}
-	
-	.foo_left.foo_logo {
-	    float: none;
-	    width: auto;
-	}
-	.foo_top {
-	    float: none;
-	    margin-left: 0;
-	    width: auto;
-	}
-	.foo_left {
-	    float: none;
-	    margin-left: 0;
-	    margin-bottom: 20px;
-	    width: auto;
-	}
-	
-	#copy {
-	    padding: 15px 0 5px;
-	    min-height: 32px;
-	}
-    }
 }
-@media screen and (max-width: 450px) {
+// @media screen and (max-width: 450px) {
+// 	footer {
 
-}
+// 	}
+// }
 
 
 

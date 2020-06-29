@@ -29,7 +29,9 @@
     padding: 0 70px;
 
     .slick-list {
-        margin: 0 -15px;
+        margin: -30px -15px;
+        padding: 30px 15px;
+        //height: 251px;
     }
 
     .slick-arrow {
@@ -53,6 +55,7 @@
         }
 
         &.slick-next {
+            right: 5px;
             &:before {
                 left: 23px;
             }
@@ -72,9 +75,9 @@
     .step {
         margin: 0 15px;
         background: linear-gradient(122.91deg, #CEA822 0%, #FCFF70 100%);
-        box-shadow: 0px 10px 30px rgba(1, 18, 5, 0.2);
         border-radius: 5px;
         padding: 3px;
+        @include transition(all);
 
         a {
             display: block;
@@ -85,7 +88,11 @@
             color: $color_text;
             @include transition(all);
 
-            &:hover {
+        }
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(1, 18, 5, 0.2);
+
+            a {
                 background-color: transparent;
                 color: #fff;
 
@@ -109,14 +116,14 @@
             display: block;
             text-align: center;
             margin-bottom: 10px;
-            @include transition_slow(all);
+            @include transition(all);
         }
 
         .h3 {
             display: block;
-            min-height: 90px;
+            height: 90px;
             margin-bottom: 0;
-            line-break: 26px;
+            overflow: hidden;
         }
     }
 
@@ -222,25 +229,125 @@
 
 
 @media screen and (max-width: 1600px) {
+    .our_work_slider {
     
+        .step {
+            a {
+                padding: 30px 30px 5px;
+            }
+            .h3 {
+                height: 90px;
+                line-height: 25px;
+            }
+        }
+    
+    }
 }
 @media screen and (max-width: 1400px) {
+    .our_work_slider {
+        .step {
+            a {
+                padding: 30px 20px 5px;
+            }
+        }
     
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .advantages{
+        .item {
+            p {
+                line-height: 20px;
+                min-height: auto;
+            }
+        } 
+    } 
 }
 
 @media screen and (max-width: 1100px) {
-    
+    .our_work_slider {
+        margin: 0 0px;
+        padding: 0 30px;
+        .slick-arrow:after {
+            width: 25px;
+            top: 18px;
+        }
+    }
+    .our_work {
+        background-size: auto 100%;
+        padding-bottom: 169px;
+        padding-top: 45px;
+        margin: 0 -30px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-   
+    .our_work_slider {
+        .slick-list {
+            height: 161px;
+        }
+        .slick-arrow:after {
+            width: 25px;
+            top: 18px;
+        }
+        .step {
+            a {
+                padding: 20px 20px 5px;
+            }
+            .h3 {
+                height: 70px;
+                line-height: 21px;
+            }
+        }
+    }
+    .our_work {
+        padding-bottom: 119px;
+        padding-top: 40px;
+        margin: 0 -20px;
+    }
+    .advantages{
+        margin-bottom: 30px;
+        .item {
+            padding: 12px 0 12px 22px;
+        } 
+    } 
+    #advantages {
+        padding-bottom: 70px;
+    }
 }
 @media screen and (max-width: 600px) {
     
 }
 
 @media screen and (max-width: 450px) {
-    
+    .our_work_slider {
+        margin: 0 0px;
+        padding: 0 30px;
+        .slick-arrow:after {
+            width: 20px;
+            top: 13px;
+        }
+        .slick-arrow.slick-next {
+            right: 13px;
+        }
+    }
+    .our_work {
+        padding-bottom: 50px;
+        padding-top: 0px;
+        margin: 0 -10px;
+    }
+
+    .advantages{
+        margin-bottom: 20px;
+        .slick-list {
+            padding: 14px 0;
+            margin: 0 0px;
+        }
+    } 
+    #advantages {
+        padding-bottom: 50px;
+    }
 }
 
 /* end advantages styles */

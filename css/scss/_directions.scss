@@ -114,6 +114,7 @@
 
         .h5 {
             line-height: 28px;
+            font-size: 18px;
         }
     }
 
@@ -121,25 +122,80 @@
 
 
 @media screen and (max-width: 1600px) {
-    
+    .directions {
+        .item {
+            .h5 {
+                max-width: 150px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1400px) {
     
 }
 
-@media screen and (max-width: 1100px) {
-    
+@media screen and (max-width: 1000px) {
+    #directions {
+        margin-top: -50px;
+        padding-bottom: 0px;
+    }
+    .directions {
+        margin-bottom: 50px;
+        .item {
+            height: 100px;
+            line-height: 100px;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
-   
+    .directions {
+        margin-bottom: 30px;
+        .item {
+            .h5 {
+                font-size: 16px;
+                line-height: 24px;
+                margin-left: 0;
+                max-width: 130px;
+            }
+
+            .icon {
+                margin-right: 5px;
+                img {
+                    height: 40px;
+                }
+            } 
+        }
+    }
 }
 @media screen and (max-width: 600px) {
-    
+    .directions {
+        .item {
+            .h5 {
+                font-size: 14px;
+                line-height: 22px;
+                max-width: 115px;
+                margin-right: 5px;
+            }
+
+            .icon {
+                margin-left: 5px;
+                img {
+                    height: 35px;
+                }
+            } 
+        }
+    }
 }
 
-@media screen and (max-width: 450px) {
-    
+@media screen and (max-width: 500px) {
+    .directions {
+        .item {
+            .h5 {
+                max-width: auto;
+            }
+        }
+    }
 }
 
 /* end directions styles */
