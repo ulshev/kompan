@@ -3,8 +3,13 @@
 #directions {
     overflow: visible;
     margin-top: -65px;
-    padding-bottom: 27px;
+    padding-bottom: 26px;
     z-index: 2;
+
+    .all_link {
+        margin-top: 6px;
+    }
+
 }
 
 .directions {
@@ -29,6 +34,13 @@
                 border-color: #333333;
             }
         }
+    }
+
+    .slick-prev {
+        left: 23px;
+    }
+    .slick-next {
+        right: 23px;
     }
 
     .item {
@@ -130,8 +142,13 @@
         }
     }
 }
-@media screen and (max-width: 1400px) {
-    
+@media screen and (max-width: 1100px) {
+    .directions .slick-prev {
+        left: 0px;
+    }
+    .directions .slick-next {
+        right: 0px;
+    }
 }
 
 @media screen and (max-width: 1000px) {

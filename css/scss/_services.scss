@@ -24,9 +24,9 @@
 
     .all_link {
         float: none;
-        margin-bottom: 20px;
-        //display: inline-block;
-        margin-top: 0;
+        margin-bottom: 25px;
+        margin-top: 4px;
+        display: inline-block;
     }
 
     .text {
@@ -107,8 +107,11 @@ ul.strong {
     
     }
 }
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 700px) {
+    #services .all_link {
+        display: table;
+        margin-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 450px) {

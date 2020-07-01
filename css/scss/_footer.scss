@@ -9,7 +9,7 @@
 footer {
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: auto;
     box-sizing: border-box;
     clear: both;
     
@@ -18,7 +18,7 @@ footer {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		z-index: 0;
+		z-index: auto;
 		width: 710/1920*100%;
 		height: 600px;
 		background: url(images/bg_footer.jpg) left bottom no-repeat;
@@ -28,7 +28,7 @@ footer {
 
     .in { 
 		padding-top: 28px;
-		z-index: 1;
+		z-index: 3;
         
         &:after { 
             @include clear();

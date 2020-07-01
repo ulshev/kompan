@@ -61,7 +61,7 @@ body {
     min-height: 100%;
     //display: table;
     
-	//background: url(images/site.jpg) center 0px no-repeat;
+	background: url(images/site.jpg) center 0px no-repeat;
 	// background-size: auto;
 }
 //#index, #about_page, #product {
@@ -81,6 +81,7 @@ body {
     overflow: hidden;
     position: relative;
 	//@include transition_slow(all);
+	//opacity: 0.5;
 	
 	.h1 {
 		margin-left: 150px;
@@ -104,21 +105,14 @@ body {
 	}
 	.main_section {
 		.h1 {
-			margin-left: 50px;
-			margin-right: 50px;
+			margin-left: 0px;
+			margin-right: 0px;
 		}
 	}
 }
 @media screen and (max-width: 800px) {
     .in {
 		padding: 0px 20px;
-	}
-	.main_section {
-		.h1 {
-			margin-left: 0px;
-			margin-right: 0px;
-			//text-align: left;
-		}
 	}
 }
 @media screen and (max-width: 450px) {
@@ -612,7 +606,7 @@ ul.slick-dots {
 
 		span, a {
 			padding: 3px 5px;
-			margin: 0 25px;
+			margin: 0 15px;
 			font-size: 20px;
 			line-height: 25px;
 		} 
@@ -655,12 +649,13 @@ ul.slick-dots {
     font-weight: 600;
 }
 .all_link {
-    float: right;
+	float: right;
+	//display: inline-block;
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 22px;
     color: $color_text;
-    margin-top: -55px;
+    margin-top: -60px;
     position: relative;
     //letter-spacing: 0.1px;
     @include transition(color);
@@ -806,18 +801,16 @@ ul.slick-dots {
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .bread_crumbs {
-		ul li {
-			&:before {
-				width: 8px;
-				height: 8px;
-				top: 8px;
-			}  
-		}
+@media screen and (max-width: 1000px) {
+    .breadcrumbs {
+		margin-bottom: 30px;
     }
 }
-
+@media screen and (max-width: 800px) {
+    .breadcrumbs {
+		margin-bottom: 20px;
+    }
+}
 
 .pagination {
     margin-bottom: 50px;
