@@ -819,6 +819,21 @@ div.catalog + .pagination {
             margin: 0 15px 30px 15px;
         }
     }
+
+    #about_page {
+        .production {
+            margin: 0 -15px;
+            .item {
+                height: 230px;
+                .h6 {
+                    font-size: 18px;
+                }
+                 a:hover {
+                    line-height: 225px;
+                }
+            }
+        }
+    }
     .left_col {
         width: 260px;
         .select select {
@@ -929,6 +944,16 @@ div.catalog + .pagination {
             margin-bottom: 30px;
         }
     }
+
+    #about_page {
+        .production {
+            .item {
+                .h6 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1031,6 +1056,15 @@ div.catalog + .pagination {
 
         .description .button {
             margin-top: 10px;
+        }
+    }
+    #about_page {
+        .production {
+            margin: 0 -10px 30px;
+            .item {
+                margin: 0 6px 20px 10px;
+                width: calc(50% - 20px);
+            }
         }
     }
 }
@@ -1156,6 +1190,17 @@ div.catalog + .pagination {
         }
         div.catalog {
             margin-bottom: 10px;
+        }
+    }
+
+    #about_page {
+        .production {
+            margin: 0 0px;
+            .item {
+                display: block;
+                margin: 0 0px 20px 0px;
+                width: 100%;
+            }
         }
     }
 }

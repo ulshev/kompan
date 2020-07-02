@@ -105,6 +105,7 @@ ul.advantages_list {
     margin-bottom: 33px;
     li {
         display: inline-block;
+        vertical-align: middle;
         font-size: 28px;
         line-height: 30px;
         font-weight: 800;
@@ -210,7 +211,7 @@ ul.advantages_list {
     width: 1030/1530*100%;
     max-width: 1010px;
     height: 440px;
-    margin: 29px 0 30px 30px;
+    margin: 29px 0 30px 0px;
     padding: 3px;
 	border-radius: 5px;
     //padding-top: 47px;
@@ -249,10 +250,12 @@ ul.advantages_list {
     }
 }
 
-#map + .text {
+#contacts_page .text {
     padding-top: 95px;
+    float: left;
     max-width: 360px;
     padding-bottom: 60px;
+    width: 30%;
 }
 
 .galery {
@@ -296,7 +299,7 @@ ul.advantages_list {
         padding: 0;
 
 	    div {
-            height: 100%;
+            height: 100% !important;
         }
 	    
 	    .slick-list {
@@ -304,7 +307,15 @@ ul.advantages_list {
             position: relative;
             width: 100%;
             height:  100%;
-	    }
+        }
+        .slick-arrow {
+            border: 2px solid #fff;
+
+            &::before {
+                border-top-color: #fff;
+                border-left-color: #fff;
+            }
+        }
 	    
 	    .slide {
 		    height: 100%;
@@ -321,7 +332,7 @@ ul.advantages_list {
 	    img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
 	    }
 	    
 	}
@@ -392,6 +403,12 @@ ul.advantages_list {
             vertical-align: bottom;
 	    }
 	}
+}
+#product_item .images_slider {
+    .main_img img {
+        object-fit: contain;
+        vertical-align: middle;
+    }
 }
 
 .basket_table {
@@ -513,7 +530,7 @@ ul.advantages_list {
         }
 
         .text {
-            min-height: 391px;
+            min-height: 291px;
         }
 
         .button {
@@ -521,6 +538,16 @@ ul.advantages_list {
         }
 
     }
+    
+    .text_block {
+		.in {
+            padding-top: 25px;
+            padding-bottom: 10px;
+		}
+    }  
+    #main_form2 {
+        padding-top: 50px;
+    } 
 }
 
 #why_are_we {
@@ -534,8 +561,8 @@ ul.advantages_list {
         }
 
         .text {
-            min-height: 516px;
             margin-right: 44%;
+            min-height: 432px;
         }
 
         .button {
@@ -565,7 +592,7 @@ ul.advantages_list {
 
     .text_block {
         .production {
-            padding-top: 4px;
+            padding-top: 17px;
             margin-bottom: 30px;
 
             .item {
@@ -574,7 +601,7 @@ ul.advantages_list {
         }
 
         .text {
-            margin-bottom: 30px;
+            margin-bottom: 4px;
         }
     }
 
@@ -587,10 +614,15 @@ ul.advantages_list {
         .projects {
             margin-bottom: 64px;
         }
+        .projects + .buttons {
+            margin-bottom: 81px;
+        }
     }
-
+    .download {
+        margin-top: 23px;
+    }
     .tabs_container {
-        margin-top: -4px;
+        margin-top: 23px;
     }
 }
 
@@ -616,14 +648,6 @@ ul.advantages_list {
         //padding-top: 75px; в каталоге большой отступ делает
         padding-bottom: 10px;
     }
-}
-
-#projects_page {
-    .text_block {
-		.in {
-			padding: 17px 0 10px;
-		}
-	}   
 }
 
 #services_page {
@@ -661,7 +685,8 @@ ul.advantages_list {
 
     #standards {
         .in {
-            padding: 55px 0 87px;
+            padding-top: 55px;
+            margin-bottom: 87px;
         }
 
         .text {
@@ -676,7 +701,7 @@ ul.advantages_list {
     }
 }
 
-    .text_image.right_img, .text_image.left_img {
+.text_image.right_img, .text_image.left_img {
         overflow: visible;
         .image {
             width: 50%;
@@ -686,18 +711,20 @@ ul.advantages_list {
             margin-top: -300px;
 
             img {
-                max-width: 100%;
+                max-width: 87%;
                 width: auto;
                 vertical-align: middle;
             } 
         }
         .in {
-            padding: 65px 0 10px;
+            padding-top: 65px;
+            padding-bottom: 10px;
         }
 
         .text {
             padding-top: 66px;
             padding-bottom: 20px;
+            min-height: 300px;
         }
 
         .all_link {
@@ -715,7 +742,7 @@ ul.advantages_list {
         .button {
             margin-top: 30px;
         }
-    }
+}
     
     .text_image.right_img {
         .image {
@@ -756,39 +783,6 @@ ul.advantages_list {
     }
 }
 
-#game_institute {
-    .right_img .text, .left_img .text {
-        padding-bottom: 110px;
-    }
-
-    .text_block.right_img, .text_block.left_img {
-        .image {
-            top: -10px;
-        }
-
-        .text {
-            padding-top: 68px;
-            margin-right: 43%;
-        }
-    } 
-    .text_image.right_img, .text_image.left_img {
-        .image {
-            margin-top: -385px;
-        }
-    }
-
-    .text_image + .text_block {
-        .in {
-            padding-top: 62px;
-            padding-bottom: 20px;
-        }
-
-        .tabs_container {
-            padding-top: 15px;
-            margin-bottom: 60px;
-        }
-    }
-}
 
 #directions_in {
     main {
@@ -827,10 +821,209 @@ ul.advantages_list {
             }
         }
     }
+    ul.advantages_list {
+        margin-bottom: 10px;
+        columns: 2;
+        li {
+            font-size: 25px;
+            line-height: 30px;
+            padding: 15px 25px;
+
+            &:nth-child(3n+1), &:nth-child(3n+2), &:nth-child(3n+3) {
+                width: auto;
+            }
+        }
+    }
+
+    .right_img, .left_img {
+        .image {
+            top: -50px;
+        }
+        .text {
+            padding-bottom: 50px;
+        }
+        .advantages_list {
+            margin-right: -30%;
+        }
+    }
+    .text_image.right_img, .text_image.left_img {
+        .text {
+            min-height: auto;
+        }
+    }
+    #about_page .text_image + .text_block .in {
+        padding-top: 30px;
+    }
+
+    .galery {
+        .item {
+            height: 300px;
+        }
+    }
+
+    #why_are_we {
+        main {
+            .in {
+                padding-top: 0px;
+            }
+        }
+        .text_block.right_img {
+            .in {
+                padding-top: 30px;
+            }
+            .image {
+                top: 63px;
+            }
+            .text {
+                padding-top: 0px;
+                min-height: auto;
+            }
+        }
+    }
+    #why_are_we main .text {
+        min-height: auto;
+    }
+    #why_are_we .text_block .production .item {
+        height: 300px;
+    }
+    #services_page {
+        .advantages {
+            .item {
+                padding: 12px 5px 12px 15px;
+                p {
+                    line-height: 20px;
+                    min-height: 80px;
+                }
+                .h3 {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        #standards {
+            .in {
+                padding-top: 0px;
+                margin-bottom: 10px;
+            }
+            .text {
+                padding-top: 0px;
+            }
+        }
+        #main_form2 + .text_block .in {
+            padding-top: 50px;
+        }
+    }
+    #projects_page {
+        main{
+            .in {
+                padding-top: 0px;
+            }
+    
+        }
+        
+        .text_block {
+            .in {
+                padding-top: 0px;
+                padding-bottom: 10px;
+            }
+        }  
+        #main_form2 {
+            padding-top: 0px;
+        } 
+    }
 }
 
 @media screen and (max-width: 1300px) {	
-   
+    .right_img, .left_img {
+        .image {
+            top: -20px;
+        }
+        .text {
+            padding-bottom: 20px;
+        }
+    }
+
+    main.right_img {
+        .image {
+            top: 40px;
+        }
+    }
+    .text_image.right_img, .text_image.left_img {
+        .in {
+            padding-top: 20px;
+        }
+        .text {
+            padding-top: 10px;
+        }
+
+        .all_link {
+            margin-bottom: 30px;
+        }
+    }
+    .galery {
+        .item {
+            height: 250px;
+        }
+    }
+    
+    .text .right + p, .text .left + p {
+        padding-top: 0px;
+    }
+    .text {
+        .right {
+            margin: 0 0 70px 30px;
+        }
+        .left {
+            margin: 0 30px 70px 0;
+        }
+    }
+    #why_are_we .text_block.right_img .in {
+        padding-top: 0px;
+    }
+    #why_are_we .text_block .production .item {
+        height: 250px;
+    }
+    #why_are_we #projects .projects + .buttons {
+        margin-bottom: 50px;
+    }
+    #directions_in main {
+        .in {
+            padding-top: 0px;
+        }
+        &.right_img .image {
+            top: -50px; 
+        }
+        .button {
+            margin-top: 30px;
+        }
+    }
+    #services_page {
+        .text_image.right_img, .text_image.left_img  {
+            .button {
+                margin-top: 30px;
+            }
+        }
+        #standards + .main_section {
+            .h1 {
+                max-width: 550px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        } 
+    }
+    #projects_page {
+        main{
+            .image {
+                top: -20px;
+            }
+            .button {
+                margin-top: 30px;
+            }
+            .text {
+                min-height: auto;
+            }
+        }
+        
+    }
 }
 
 @media screen and (max-width: 1200px) {	
@@ -845,6 +1038,21 @@ ul.advantages_list {
         a {
             margin: 0 15px 0 0;
         }
+    }
+    ul.advantages_list {
+        margin-bottom: 0;
+        li {
+            font-size: 21px;
+            line-height: 26px;
+        }
+    }
+    .text_image.right_img, .text_image.left_img {
+        h3 {
+            font-size: 21px;
+        }
+    }
+    #why_are_we .text_block .production .item {
+        width: calc(50% - 31px);
     }
 }
 
@@ -868,6 +1076,114 @@ ul.advantages_list {
             }
         }
     }
+
+    .right_img, .left_img {
+        .image {
+            top: 0px;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    }
+    #about_page .text_image + .text_block .in {
+        padding-top: 0px;
+    }
+
+    .right_img.no-text, .left_img.no-text {
+        .in {
+            padding-top: 0px;
+        }
+    } 
+
+    .galery {
+        .slick-list {
+            margin: 0 -15px 30px;
+        }
+    }
+    #map {
+        width: auto;
+        height: 340px;
+        margin: 0 0 30px 0px;
+        float: none;
+    }
+    
+    #contacts_page {
+        .text {
+            padding-top: 0px;
+            float: none;
+            max-width: none;
+            padding-bottom: 30px;
+            width: auto;
+        }
+        .cont.tel, .cont.mail {
+           display: inline-block;
+           margin-right: 30px;
+        }
+    }
+    .text {
+        h2 {
+            margin-top: 30px;
+        }
+        .right {
+            margin: 0 0 50px 30px;
+        }
+        .left {
+            margin: 0 30px 50px 0;
+        }
+    }
+    
+    .tabs_container + .buttons {
+        margin-bottom: 30px;
+    } 
+    #why_are_we main {
+        .button {
+            margin-top: 30px;
+        }
+    }
+    #why_are_we #projects .projects {
+        margin-bottom: 30px;
+    }
+    #why_are_we #projects .in {
+        padding-top: 50px;
+    }
+    #directions_in main.right_img .image {
+        top: -10px;
+    }
+    #services_page {
+        .advantages {
+            padding-top: 0px;
+
+            .item {
+                margin-bottom: 20px;
+                width: calc(55% - 32px);
+
+                &:nth-child(2n+1) {
+                    width: calc(45% - 32px);
+                }
+                p {
+                    min-height: 60px;
+                }
+            }
+        }
+        .text_image.right_img, .text_image.left_img  {
+            .text {
+                padding-bottom: 30px;
+            }
+        } 
+    }
+    #projects_page {
+        main{
+            .image {
+                top: 20px;
+                left: 50px;
+            }
+            .button {
+                margin-top: 10px;
+            }
+    
+        }
+        
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -877,6 +1193,60 @@ ul.advantages_list {
         .main_img {
             height: 345px;
         }
+    }
+    .right_img, .left_img {
+        ul.advantages_list {
+            li {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .text {
+        .right {
+            margin: 0 0 30px 20px;
+        }
+        .left {
+            margin: 0 20px 30px 0;
+        }
+    }
+    #why_are_we .advantages {
+        margin-bottom: 30px;
+    }
+    #why_are_we .text_block .production .item {
+        margin: 0 6px 20px 10px;
+    }
+    #why_are_we .text_block .production {
+        margin: 0px -10px 20px;
+    }
+    #why_are_we #projects .projects + .buttons {
+        margin-bottom: 30px;
+    }
+    #why_are_we #projects .projects {
+        margin-bottom: 10px;
+    }
+    #directions_in main {
+        .button {
+            margin-top: 10px;
+        }
+    }
+    #directions_in main.right_img .image {
+        top: 20px;
+    }
+
+    #services_page {
+        .text_image.right_img, .text_image.left_img  {
+            .text {
+                padding-bottom: 0px;
+            }
+            .button {
+                margin-top: 20px;
+            }
+            .all_link {
+                margin-bottom: 10px;
+            }
+        } 
     }
 }
 
@@ -889,6 +1259,12 @@ ul.advantages_list {
             img {
                 width: 30px;
             }
+        }
+    }
+    .right_img, .left_img {
+        .advantages_list {
+            margin-right: -100%;
+            padding-top: 10px;
         }
     }
 }
@@ -904,6 +1280,103 @@ ul.advantages_list {
             height: 100px;
             .img_small {
                 height: 100px;
+            }
+        }
+    }
+
+    .right_img, .left_img {
+        .image {
+            display: none;
+        }
+        .text {
+            margin-right: 0;
+            padding-bottom: 0px;
+        }
+        ul.advantages_list {
+            margin-right: 0;
+            li {
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 10px;
+                padding: 5px 25px;
+            }
+        }
+    }
+    .text_image.right_img, .text_image.left_img {
+        .in {
+            padding-top: 0px;
+        }
+        .text {
+            padding-top: 0px;
+            padding-bottom: 0;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    .text_image.right_img {
+        .text {
+            margin-right: 0;
+        }
+    }
+    .text_image.left_img {
+        .text {
+            margin-left: 0;
+        }
+    }
+    .right_img.no-text, .left_img.no-text {
+        .in {
+            .text {
+                min-height: auto;
+            }
+        }
+    } 
+
+    #map {
+        height: 240px;
+    }
+
+    #news_page main .text {
+        min-height: auto;
+    }
+    #why_are_we main {
+        .text {
+            margin-right: 0;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    }
+    #why_are_we #projects .in {
+        padding-top: 30px;
+    }
+    #why_are_we .tabs_container {
+        margin-top: 0px;
+    }
+
+    #services_page {
+        main h1 {
+            margin-right: 0;
+        }
+        #main_form2 + .text_block .in {
+            padding-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    #services_page {
+        .advantages {
+            .item {
+                width: auto;
+                display: block;
+
+                &:nth-child(2n+1) {
+                    width: auto;
+                }
+                p {
+                    min-height: auto;
+                }
             }
         }
     }
@@ -923,6 +1396,43 @@ ul.advantages_list {
             display: none;
         }
     }
+    ul.advantages_list {
+        columns: 1;
+        li {
+            display: block;
+        }
+    }
+    .right_img, .left_img {
+        .button {
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .galery {
+        .slick-list {
+            margin: 0 -5px 30px;
+        }
+        .item {
+            height: 180px;
+        }
+    }
+
+    .text {
+        .right, .left {
+            margin: 0 0 30px 00px;
+            float: none;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    #why_are_we .text_block .production .item {
+        width: calc(100% - 20px)
+    }
+    #why_are_we #projects .projects {
+        margin-bottom: 0px;
+    }
+
 }
 
 /* end content styles */

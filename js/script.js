@@ -106,7 +106,7 @@ $(document).ready(function() {
 	    slidesToScroll: 1,
 	    infinite: true,
 	    dots: false,
-	    focusOnSelect: true,
+	    //focusOnSelect: true,
 	    arrows: true,
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
@@ -347,7 +347,27 @@ $(document).ready(function() {
 	    dots: false,
 	    //fade: true,
 	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
+		responsive: [
+			{
+				breakpoint: 1301,
+				settings: {
+				  slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 1001,
+				settings: {
+				  slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 601,
+				settings: {
+				  slidesToShow: 1,
+				}
+			},
+		]
 	});
 	
 
@@ -359,7 +379,21 @@ $(document).ready(function() {
 	    dots: false,
 	    //fade: true,
 	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
+		responsive: [
+			{
+				breakpoint: 1101,
+				settings: {
+				  slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 601,
+				settings: {
+				  slidesToShow: 1,
+				}
+			},
+		]
 	});
 	
 	$('.catalog.slider').slick({
@@ -445,21 +479,21 @@ $(document).ready(function() {
 	});
 	
 
-	$('select').select2();
+	//$('select').select2();
 
-	$( "#slider-range" ).slider({
-		range: true,
-		min: 2,
-		max: 8,
-		values: [ 3, 8 ],
-		slide: function( event, ui ) {
-		  $( "#amount-min" ).val( ui.values[ 0 ] );
-		  $( "#amount-max" ).val( ui.values[ 1 ] + "+" );
-		}
-	});
-	$( "#amount-min" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+	// $( "#slider-range" ).slider({
+	// 	range: true,
+	// 	min: 2,
+	// 	max: 8,
+	// 	values: [ 3, 8 ],
+	// 	slide: function( event, ui ) {
+	// 	  $( "#amount-min" ).val( ui.values[ 0 ] );
+	// 	  $( "#amount-max" ).val( ui.values[ 1 ] + "+" );
+	// 	}
+	// });
+	// $( "#amount-min" ).val( $( "#slider-range" ).slider( "values", 0 ) );
 
-	$( "#amount-max" ).val( $( "#slider-range" ).slider( "values", 1 ) + "+" );
+	// $( "#amount-max" ).val( $( "#slider-range" ).slider( "values", 1 ) + "+" );
 
 	
 
