@@ -2010,7 +2010,7 @@ footer #copy {
     padding-top: 100px;
   }
   #main_screen .text {
-    width: 60%;
+    width: 65%;
   }
   #main_screen h2 {
     font-size: 14px;
@@ -5503,6 +5503,7 @@ ul.advantages_list li:nth-child(6n+6)::before {
 
 .basket_table {
   overflow: auto;
+  margin-bottom: 30px;
 }
 .basket_table table {
   border-left: 1px solid #EEF3F4;
@@ -6112,6 +6113,25 @@ ul.advantages_list li:nth-child(6n+6)::before {
   #projects_page main .button {
     margin-top: 10px;
   }
+
+  .basket_table {
+    margin-bottom: 20px;
+  }
+  .basket_table th {
+    font-size: 18px;
+    height: auto;
+  }
+  .basket_table td {
+    padding: 20px;
+  }
+  .basket_table p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .basket_table + .buttons {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 800px) {
   .images_slider {
@@ -6171,6 +6191,23 @@ ul.advantages_list li:nth-child(6n+6)::before {
   }
   #services_page .text_image.right_img .all_link, #services_page .text_image.left_img .all_link {
     margin-bottom: 10px;
+  }
+
+  .basket_table th {
+    font-size: 16px;
+    padding: 20px 15px;
+  }
+  .basket_table td {
+    padding: 15px;
+  }
+  .basket_table p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .basket_table .img a {
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
   }
 }
 @media screen and (max-width: 700px) {

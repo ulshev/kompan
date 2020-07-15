@@ -413,6 +413,7 @@ ul.advantages_list {
 
 .basket_table {
     overflow: auto;
+    margin-bottom: 30px;
 
     table {
         border-left: 1px solid #EEF3F4;
@@ -1184,6 +1185,25 @@ ul.advantages_list {
         }
         
     }
+    .basket_table {
+        margin-bottom: 20px;
+
+        th {
+            font-size: 18px;
+            height: auto;
+        }
+        td {
+            padding: 20px;
+        }
+    
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .basket_table + .buttons {
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1247,6 +1267,25 @@ ul.advantages_list {
                 margin-bottom: 10px;
             }
         } 
+    }
+    .basket_table {
+        th {
+            font-size: 16px;
+            padding: 20px 15px;
+        }
+        td {
+            padding: 15px;
+        }
+    
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .img a {
+            width: 100px;
+            height: 80px;
+            line-height: 80px;
+        }
     }
 }
 
