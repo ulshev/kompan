@@ -5577,9 +5577,15 @@ ul.advantages_list li:nth-child(6n+6)::before {
 }
 
 #contacts_page main {
-  background: url(images/bg_contacts_page.jpg) no-repeat center center/100% auto;
+  background: url(images/bg_contacts_page.jpg) no-repeat center center/100% 110%;
 }
 
+@media screen and (max-width: 1000px) {
+  #contacts_page main {
+    background-position: right bottom;
+    background-size: 100% auto;
+  }
+}
 #news_page main .text {
   min-height: 205px;
 }
@@ -6375,6 +6381,43 @@ ul.advantages_list li:nth-child(6n+6)::before {
     margin-bottom: 0px;
   }
 }
+.attribute_selection {
+  padding-top: 32px;
+}
+.attribute_selection .attr {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  border: 1px solid #DFEDEE;
+  overflow: hidden;
+  width: 108px;
+  height: 108px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.attribute_selection .attr::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.attribute_selection .attr.active, .attribute_selection .attr:hover {
+  border-color: rgba(0, 79, 50, 0.7);
+}
+.attribute_selection .attr img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 /* end content styles */
 .gUniFormModalWindow.form_block {
   background: rgba(51, 51, 51, 0.9);
